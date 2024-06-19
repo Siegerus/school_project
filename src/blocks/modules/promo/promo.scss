@@ -1,0 +1,393 @@
+.promo {
+    min-height: 1050px;
+    background: url('../img/bg_math2.svg') bottom right / 781px 900px no-repeat,
+                url('../img/bg_ellipse.png') center / cover no-repeat;
+    background-color: $main-color1;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__img {
+        margin-top: 9px; 
+        max-width: 788px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__content {
+        max-width: 788px;
+    }
+
+    &__subtitle {
+        font-size: 32px;
+        color: $main-color2;
+        line-height: 75%;
+        font-weight: 700;
+    }
+
+    &__title {
+        margin-top: 32px;
+        padding-right: 67px;
+        color: $main-color2;
+        font-size: 120px;
+        font-weight: 700;
+        line-height: 125%;
+        text-transform: uppercase;
+        border: 1px solid #1f1f1f;
+        border-left: none;
+        border-right: none;
+    }
+
+    &__descr {
+        margin-top: 32px;
+        color: $main-color2;
+        font-size: 24px;
+        line-height: 130%;
+        font-weight: 700;
+    }
+
+    &__btn {
+        display: block;
+        margin-top: 60px;
+        padding: 26px 40px;
+        max-width: 430px;
+        border: 1px solid #424242;
+        border-radius: 35px;
+        color: $main-color2;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 60%;
+        text-transform: uppercase;
+    }
+
+    &__footer {
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__analys, &__card, &__example {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 60%;
+        color: $main-color2;
+    }
+
+    &__card {
+        margin: 32px 0;
+        text-align: center;
+    }
+
+    &__example {
+        text-align: right;
+    }
+}
+
+
+@media (max-width: 1680px) {
+    .container {
+        max-width: 1320px;
+    }
+
+    .promo {
+        min-height: 930px;
+        background: url('../img/bg_math2.svg') bottom right / 650px 780px no-repeat,
+                url('../img/bg_ellipse.png') center / cover no-repeat;
+        background-color: $main-color1;
+        
+        &__content {
+            max-width: 560px;
+        }
+
+        &__title {
+            padding-right: 34px;
+            font-size: 86px;
+        }
+
+        &__subtitle {
+            font-size: 27px;
+        }
+
+        &__descr {
+            font-size: 21px;
+        }
+
+        &__img {
+            max-width: 680px;
+        }
+
+        &__analys, &__card, &__example {
+            font-size: 27px;
+        }
+    } 
+}
+
+@media (max-width: 1440px) {
+    .container {
+        max-width: 1120px;
+    }
+
+    .promo {
+        min-height: 840px;
+        background: url('../img/bg_math2.svg') bottom right / 600px 690px no-repeat,
+                    url('../img/bg_ellipse.png') center / cover no-repeat;
+        background-color: $main-color1;   
+        
+        &__wrapper {
+            align-items: flex-end;
+        }
+
+        &__content {
+            max-width: 520px;
+        }
+
+        &__title {
+            padding-right: 60px;
+            font-size: 78px;
+        }
+
+        &__subtitle {
+            font-size: 24px;
+        }
+
+        &__descr {
+            font-size: 18px;
+        }
+
+        &__img {
+            max-width: 520px;
+
+            img {
+                object-fit: contain;
+            }
+        }
+
+        &__analys, &__card, &__example {
+            font-size: 24px;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 968px;
+    }
+
+    .promo  {
+        min-height: 755px;
+        background: url('../img/bg_math2.svg') bottom right / 500px 605px no-repeat,
+                    url('../img/bg_ellipse.png') center / cover no-repeat;
+        background-color: $main-color1;
+
+        &__title {
+            padding-right: 68px;
+            font-size: 53px;
+        }
+
+        &__subtitle {
+            font-size: 22px;
+        }
+
+        &__descr {
+            font-size: 17px;
+        }
+
+        &__content {
+            max-width: 400px;
+        }
+
+        &__img {
+            max-width: 400px; 
+        }
+
+        &__btn {  
+            margin-top: 40px;
+            padding: 26px 40px;
+            max-width: 340px;
+            font-size: 17px;  
+        }
+
+        &__analys, &__card, &__example {
+            font-size: 22px;
+        }
+    }
+}
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+
+    .promo  {
+        min-height: 670px;
+        background: url('../img/bg_math2.svg') bottom right / 395px 555px no-repeat,
+                    url('../img/bg_ellipse.png') center/cover no-repeat;
+        background-color: $main-color1;
+
+        &__title {
+            padding-right: 70px;
+            font-size: 43px;
+        }
+
+        &__subtitle {
+            font-size: 19px;
+        }
+
+        &__descr {
+            font-size: 16px;
+        }
+
+        &__content {
+            max-width: 335px;
+        }
+
+        &__img {
+            max-width: 335px; 
+        }
+
+        &__btn {  
+            margin-top: 30px;
+            padding: 15px 23px;
+            max-width: 240px;
+            font-size: 13px;  
+        }
+
+        &__analys, &__card, &__example {
+            font-size: 19px;
+        }
+    }
+}
+@media (max-width: 768px) {                                                                              
+    .container {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+
+    .promo {
+        position: relative;
+        min-height: 1060px;
+        background: url('../img/bg_math2.svg') bottom left -50px / 394px 407px no-repeat,
+                    url('../img/bg_ellipse.png') top 175px center / 769px 500px no-repeat;
+        background-color: $main-color1; 
+        overflow-x: hidden;  
+        
+        &__wrapper {
+            align-items: center;
+            flex-direction: column;
+            max-width: 100%;
+        }
+
+        &__content {
+            max-width: 100%;
+        }
+
+        &__title {
+            padding-right: 0;
+            font-size: 68px;
+            line-height: 140%;
+        }
+
+        &__subtitle {
+            font-size: 22px;
+        }
+
+        &__descr {
+            font-size: 16px;
+            line-height: 150%;
+        }
+
+        &__img {
+            position: absolute;
+            right: -83px;
+            bottom: 0;
+            max-width: 390px;
+
+            img {
+                object-fit: cover;
+            }
+        }
+
+        &__analys, &__card, &__example {
+            font-size: 22px;
+        }
+
+        &__btn {  
+            margin: 0 auto;
+            margin-top: 60px;
+            padding: 27px 35px;
+            max-width: 390px;
+            font-size: 22px;  
+        }
+
+        &__footer {
+            position: relative;
+            z-index: 5;
+        }
+
+        &__card {
+            margin: 26px 0;
+            text-align: unset;
+        }
+    
+        &__example {
+            text-align: unset;
+        }
+    }
+}
+@media (max-width: 429px) {
+    .container {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    .promo {
+        min-height: 960px;
+        
+        &__title {
+            padding-right: 0;
+            font-size: 52px;
+            max-width: 320px;
+        }
+
+        &__subtitle {
+            font-size: 17px;
+        }
+
+        &__descr {
+            font-size: 14px;
+        }
+
+        &__img {
+            position: absolute;
+            right: -83px;
+            bottom: 0;
+            max-width: 390px;
+        }
+
+        &__analys, &__card, &__example {
+            font-size: 17px;
+        }
+
+        &__btn {  
+            margin-top: 35px;
+            padding: 22px 25px;
+            font-size: 17px;  
+            max-width: 300px;
+        }
+
+        &__footer {
+            margin-top: 65px;
+        }
+    }
+}
+
+/* @media (max-width: 576px) {
+    .container {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+} */
