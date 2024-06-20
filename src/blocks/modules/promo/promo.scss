@@ -268,10 +268,10 @@
     }
 
     .promo {
-        position: relative;
+        position: relative;             
         min-height: 1060px;
-        background: url('../img/bg_math2.svg') bottom left -50px / 394px 407px no-repeat,
-                    url('../img/bg_ellipse.png') top 175px center / 769px 500px no-repeat;
+        background: url('../img/bg_math2.svg') bottom left -50px / 394px 407px no-repeat;
+                    /* url('../img/bg_ellipse.png') top 175px center / 769px 500px no-repeat; */
         background-color: $main-color1; 
         overflow-x: hidden;  
         
