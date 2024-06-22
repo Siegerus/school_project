@@ -7544,7 +7544,7 @@ bem-tools-create@bem-tools/bem-tools-create:
   languageName: node
   linkType: hard
 
-"global@npm:~4.4.0":
+"global@npm:^4.3.1, global@npm:~4.4.0":
   version: 4.4.0
   resolution: "global@npm:4.4.0"
   dependencies:
@@ -8011,7 +8011,9 @@ bem-tools-create@bem-tools/bem-tools-create:
     imagemin-pngquant: "npm:^9.0.0"
     imagemin-webp: "npm:^6.0.0"
     imagemin-zopfli: "npm:^7.0.0"
+    jquery: "npm:^3.7.1"
     lint-staged: "npm:^12.3.5"
+    mediaelement: "npm:^7.0.5"
     postcss: "npm:^8.4.8"
     postcss-scss: "npm:^4.0.3"
     require-dir: "npm:^1.2.0"
@@ -9678,6 +9680,13 @@ bem-tools-create@bem-tools/bem-tools-create:
   languageName: node
   linkType: hard
 
+"jquery@npm:^3.7.1":
+  version: 3.7.1
+  resolution: "jquery@npm:3.7.1"
+  checksum: 10c0/808cfbfb758438560224bf26e17fcd5afc7419170230c810dd11f5c1792e2263e2970cca8d659eb84fcd9acc301edb6d310096e450277d54be4f57071b0c82d9
+  languageName: node
+  linkType: hard
+
 "js-tokens@npm:^4.0.0":
   version: 4.0.0
   resolution: "js-tokens@npm:4.0.0"
@@ -10662,6 +10671,16 @@ bem-tools-create@bem-tools/bem-tools-create:
   version: 2.0.4
   resolution: "mdn-data@npm:2.0.4"
   checksum: 10c0/a935c4530b938407481f7d0ccb82119ae618d9c673d2ee78bb10dcba8bd0ccbe2e2c7fe850ddc60b67e08f4c9d97f50b900993f6c2f2926e64a52ed6baa00b3a
+  languageName: node
+  linkType: hard
+
+"mediaelement@npm:^7.0.5":
+  version: 7.0.5
+  resolution: "mediaelement@npm:7.0.5"
+  dependencies:
+    global: "npm:^4.3.1"
+    svg4everybody: "npm:^2.1.9"
+  checksum: 10c0/8849bec6c3271200660e73214f6d559fe3edff07c6629a857784ac63fee60760ebddd30951c3cdd0849d745f47b21ebcd416eb012e946cbf56126c32fd89d0ae
   languageName: node
   linkType: hard
 
@@ -14805,6 +14824,13 @@ bem-tools-create@bem-tools/bem-tools-create:
   version: 1.0.0
   resolution: "svg-tags@npm:1.0.0"
   checksum: 10c0/5867e29e8f431bf7aecf5a244d1af5725f80a1086187dbc78f26d8433b5e96b8fe9361aeb10d1699ff483b9afec785a10916b9312fe9d734d1a7afd48226c954
+  languageName: node
+  linkType: hard
+
+"svg4everybody@npm:^2.1.9":
+  version: 2.1.9
+  resolution: "svg4everybody@npm:2.1.9"
+  checksum: 10c0/033ba59c4b8b3466c0abcb42bb750e255b5b245b591e5e585a6ab39baf87c19ae2269fb4921589ad94700380c46929e92a88362e180d12e7d1d1a601f27d5c2c
   languageName: node
   linkType: hard
 

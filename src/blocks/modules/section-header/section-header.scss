@@ -1,0 +1,18 @@
+.section-header {
+    &__border {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid $main-color3;
+        min-height: 194px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 125%;
+        text-transform: uppercase;
+        text-align: center;
+        color: $main-color3;
+    }
+}
