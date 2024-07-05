@@ -100,7 +100,21 @@
     }
 }
 
- @media (max-width: 1680px) {
+/* .mejs-controls .mejs-play button,
+.mejs-controls .mejs-pause button {
+    background: url('../img/icons/mediaplayer/main-play.svg');
+} */
+
+.mejs__inner .mejs__overlay-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -82px;
+    width: 158px;
+    height: 158px;
+    background: url('../img/icons/mediaplayer/main-play.svg') no-repeat;
+}
+ @media (max-width: 1679px) {
 
     .container {
         max-width: 1320px;
@@ -282,9 +296,7 @@
     }
 
     .targets {
-
-        &__bg {
-            
+        &__bg {  
             &_pb120 {
                 padding-bottom: 83px;
             }
@@ -345,6 +357,7 @@
         }
     }
 }
+
 @media (max-width: 429px) {
 
     .container {

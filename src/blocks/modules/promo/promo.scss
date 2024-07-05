@@ -21,6 +21,7 @@
 
     &__content {
         max-width: 788px;
+        padding-bottom: 30px;
     }
 
     &__subtitle {
@@ -32,11 +33,11 @@
 
     &__title {
         margin-top: 32px;
-        padding-right: 67px;
         color: $main-color2;
         font-size: 120px;
         font-weight: 700;
         line-height: 125%;
+        letter-spacing: 0.042em;
         text-transform: uppercase;
         border: 1px solid #1f1f1f;
         border-left: none;
@@ -89,7 +90,7 @@
 }
 
 
-@media (max-width: 1680px) {
+@media (max-width: 1679px) {
     .container {
         max-width: 1320px;
     }
@@ -147,7 +148,6 @@
         }
 
         &__title {
-            padding-right: 60px;
             font-size: 78px;
         }
 
@@ -289,6 +289,7 @@
             padding-right: 0;
             font-size: 68px;
             line-height: 140%;
+            letter-spacing: unset;
         }
 
         &__subtitle {

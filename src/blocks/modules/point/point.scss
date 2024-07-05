@@ -1,6 +1,5 @@
 .point {
     padding: 120px 0;
-    min-height: 825px;
     background: url('../img/bg_ellipse_white.png') center / cover no-repeat;
     background-color: $main-color1;
     
@@ -53,7 +52,7 @@
     }
 }
 
-@media (max-width: 1680px) {
+@media (max-width: 1679px) {
 
     .container {
         max-width: 1320px;
@@ -61,7 +60,7 @@
 
     .point {
         padding: 100px 0;
-        min-height: 725px;
+        /* min-height: 725px; */
     
         &__before {
             text-align: center;
@@ -88,7 +87,7 @@
     }
 
     .point {
-        min-height: 690px;
+        /* min-height: 690px; */
         &__descr {
             font-size: 30px;   
         }
@@ -103,7 +102,7 @@
 
     .point {
         padding: 100px 0;
-        min-height: 600px;
+        /* min-height: 600px; */
     
         &__number {
             font-size: 130px;
@@ -123,7 +122,7 @@
 
     .point {
         padding: 50px 0;
-        min-height: 460px;
+        /* min-height: 460px; */
     
         &__number {
             font-size: 125px;
@@ -144,7 +143,7 @@
 
     .point {
         position: relative;
-        min-height: 796px;
+        /* min-height: 796px; */
         padding: 80px 0;
         background: url('../img/bg_ellipse_white-mobile.png') center / cover no-repeat;
         background-color: $main-color1;

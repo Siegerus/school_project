@@ -1,5 +1,4 @@
 .questions {
-    min-height: 938px;
     padding-bottom: 120px;
     background-color: $main-color2;
 
@@ -116,7 +115,7 @@
     }
 }
 
-@media (max-width: 1680px) {
+@media (max-width: 1679px) {
     .container {
         max-width: 1320px;
     }
@@ -229,6 +228,7 @@
 
     .questions {
         padding-bottom: 100px;
+        
         &__wrapper {
             margin-top: 45px;
         }
