@@ -1,32 +1,69 @@
 .peak {
+    position: relative;
     padding-bottom: 120px;
+    background: url('../img/bg_peak.svg') right 355px bottom / 1157px 898px  no-repeat; 
     background-color: $main-color2;
 
-    /* &__wrapper {
+    &__wrapper {
         display: grid;
         margin-top: 80px;
         grid-template-columns: repeat(4, minmax(379px, auto));
-        grid-template-rows: repeat(3, minmax(185px, auto));
+        grid-template-rows:  minmax(140px, auto) auto ;
         grid-auto-rows: auto;
         grid-auto-columns: auto;
         align-items: center;
         justify-items: center;
-        row-gap: 30px;
+        justify-content: center;
+        row-gap: 134px;
         column-gap: 30px;
     }
 
     &__label {
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
         &_mifi {
             grid-column: 1 / 2;
         }
 
         &_mfti {
             grid-column: 4 / 5;
+            margin-top: 16px;
+            margin-right: 7px;
         }
 
         &_sct {
+            margin-top: -16px;
+            margin-right: 11px;
             grid-column: 4 / 5;
+            min-width: 379px;
         }
-    } */
 
+        &_bauman {
+            margin-left: 80px;
+            min-width: 357px;
+        }
+
+        &_itmo {
+            justify-self: end;
+        }
+
+        &_lomonosov {
+            margin-top: -15px;
+        }
+
+        &__economic {
+            margin-right: 10px;
+        }
+    }
+    
+    &__img {
+        position: absolute;
+        left: 50%;
+        bottom: -80px;
+        transform: translateX(-50%);
+    }
 }
