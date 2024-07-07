@@ -1,14 +1,13 @@
 .peak {
     position: relative;
     padding-bottom: 120px;
-    background: url('../img/bg_peak.svg') right 355px bottom / 1157px 898px  no-repeat; 
-    background-color: $main-color2;
+    background: url('../img/bg_peak.svg') right 355px bottom / 1157px 898px  no-repeat $main-color2; 
 
     &__wrapper {
         display: grid;
         margin-top: 80px;
         grid-template-columns: repeat(4, minmax(379px, auto));
-        grid-template-rows:  minmax(140px, auto) auto ;
+        grid-template-rows:  minmax(140px, auto);
         grid-auto-rows: auto;
         grid-auto-columns: auto;
         align-items: center;
@@ -65,5 +64,273 @@
         left: 50%;
         bottom: -80px;
         transform: translateX(-50%);
+        width: 1105px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     }
 }
+
+@media (max-width: 1800px) {
+    .peak {
+        background-position: right 265px bottom ;
+    }
+    
+}
+
+@media (max-width: 1679px) {
+    .container {
+        max-width: 1320px;
+    }
+
+    .peak {
+        background-position: center bottom;
+
+        &__wrapper {
+            grid-template-columns: repeat(4, minmax(305px, auto));
+        }
+
+        &__label {
+            position: relative;
+            z-index: 5;
+
+            &_bauman {
+                margin-left: 55px;
+            }
+        }
+    }
+}
+@media (max-width: 1440px) {
+
+    .container {
+        max-width: 1120px;
+    }
+
+    .peak {
+        background: url('../img/bg_peak.svg') center bottom / auto 830px  no-repeat $main-color2;
+
+        &__wrapper {
+            grid-template-columns: repeat(4, minmax(265px, auto));
+        }
+
+        &__label {
+            max-width: 200px;
+            
+            &_bauman, &_lomonosov {
+                min-width: 280px;
+            }
+
+            &_sct {
+                min-width: 300px;
+            }
+
+            &_economic {
+                max-width: 130px;
+            }
+
+            &_mifi {
+                justify-self: start;
+            }
+
+            &_mfti {
+                justify-self: end;
+            }
+        }
+
+        &__img {
+            bottom: -75px;
+            max-width: 1025px;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .container {
+        max-width: 968px;
+    }
+
+    .peak {
+        background: url('../img/bg_peak.svg') center bottom / auto 788px  no-repeat $main-color2;
+
+        &__wrapper {
+            grid-template-columns: repeat(4, minmax(225px, auto));
+            grid-template-rows:  minmax(125px, auto);
+            column-gap: 15px;
+        }
+
+        &__label {
+            max-width: 165px;
+            
+            &_bauman, &_lomonosov {
+                min-width: 260px;
+            }
+
+            &_bauman {
+                margin-left: 28px;
+            }
+
+            &_sct {
+                margin-right: 65px;
+                min-width: 300px;
+            }
+
+            &_economic {
+                max-width: 120px;
+            }
+
+            &_mfti {
+                justify-self: end;
+            }
+
+        }
+
+        &__img {
+            bottom: -63px;
+            max-width: 870px;
+        }
+    }
+}
+@media (max-width: 992px) {
+
+    .container {
+        max-width: 720px;
+    }
+
+    .peak {
+        background: url('../img/bg_peak.svg') center bottom / auto 720px  no-repeat $main-color2;
+
+        &__wrapper {
+            grid-template-columns: repeat(4, minmax(170px, auto));
+            grid-template-rows:  minmax(125px, auto);
+            column-gap: 15px;
+            row-gap: 120px;
+        }
+
+        &__label {
+            max-width: 125px;
+            
+            &_bauman, &_lomonosov {
+                min-width: 215px;
+            }
+
+            &_bauman {
+                margin-left: 28px;
+            }
+
+            &_sct {
+                align-self: start;
+                margin-right: 65px;
+                min-width: 260px;
+            }
+
+            &_economic {
+                max-width: 110px;
+            }
+
+            &_mfti {
+                justify-self: end;
+            }
+
+        }
+
+        &__img {
+            bottom: -52px;
+            max-width: 731px;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+    .peak {
+        padding-bottom: 0;
+        min-height: 1699px;
+        background: url('../img/bg_peak-mobile.svg') center bottom -12px / contain  no-repeat $main-color2;
+
+        &__wrapper {
+            align-items: center;
+            justify-items: center;
+            margin-top: 40px;
+            grid-template-columns: 319px;
+            grid-template-rows: 80px 120px 80px 80px 50px 120px 60px 80px;
+            row-gap: 50px;
+        }
+
+        &__label {
+            grid-column: unset;
+            grid-row: unset;
+
+            &_bauman {
+                margin: 0;
+                max-width: 263px;
+                order: 4;
+            }
+
+            &_lomonosov {
+                max-width: 239px;
+                order: 2;
+            }
+
+            &_misis {
+                max-width: 167px;
+                order: 1;
+            }
+
+            &_sct {
+                align-self: unset;
+                margin: 0;
+                max-width: 319px;
+                order: 7;
+            }
+
+            &_mifi  {
+                justify-self: unset;
+                max-width: 164px;
+                order: 3;
+            }
+
+            &_economic {
+                margin: 0;
+                max-width: 120px;
+                order: 6;  
+            }
+
+            &_mfti {
+                margin: 0;
+                justify-self: unset;
+                max-width: 238px;
+                order: 8;
+            }
+
+            &_itmo {
+                margin: 0;
+                justify-self: unset;
+                max-width: 148px;
+                order: 5;
+            }
+        }
+
+        &__img {
+            bottom: -36px;
+            width: 390px;
+            height: 365px;
+        }
+
+    }
+    
+    
+}
+
+@media (max-width: 429px) {
+    .container {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+}
+

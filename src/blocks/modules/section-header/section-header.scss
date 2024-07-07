@@ -14,6 +14,10 @@
         text-transform: uppercase;
         text-align: center;
         color: $main-color3;
+
+        &_m-visible {
+            display: none;
+        }
     }
 }
 
@@ -74,6 +78,14 @@
         &__title {
             font-size: 36px;
             line-height: 156%;
+
+            &_m-visible {
+                display: block;
+            }
+
+            &_m-hidden {
+                display: none;
+            }
         }
     }
 }
