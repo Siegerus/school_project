@@ -238,8 +238,8 @@
         }
 
         &__img {
-            bottom: -52px;
-            max-width: 731px;
+            bottom: -47px;
+            max-width: 665px;
         }
     }
 }
@@ -321,10 +321,7 @@
             width: 390px;
             height: 365px;
         }
-
     }
-    
-    
 }
 
 @media (max-width: 429px) {
@@ -332,5 +329,28 @@
         max-width: 100%;
         padding: 0 20px;
     }
+
+     .peak {
+        min-height: 1675px;
+
+        &__label {
+            max-width: 175px;
+
+            &_economic {
+                max-width: 115px;
+            }
+
+            &_itmo {
+                max-width: 125px;
+            }
+
+        }
+
+        &__img {
+            bottom: -30px;
+            width: 320px;
+            height: 310px;
+        }
+     }
 }
 
