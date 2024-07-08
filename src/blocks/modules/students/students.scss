@@ -1,33 +1,46 @@
 .students {
     background-color: $main-color1;
 
+    &__border {
+        border-bottom: 1px solid $main-color2;
+    }
+
     &__title {
         color: $main-color2;
     }
 
     &__wrapper {
-        
+        margin-top: 80px;
     }
 
     &__content {
         display: grid;
         grid-template-columns: 626px 788px;
-        grid-template-rows: minmax(155px, auto) minmax(120px, auto) minmax(120px, auto)  ;
+        grid-template-rows: minmax(155px, auto) minmax(120px, auto) minmax(120px, auto) 44px 56px;
+        column-gap: 182px;
+        row-gap: 80px;
+    }
 
-        
+    &__img {
+        grid-row: 1 / 6;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     }
 
     &__item {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: space-between;
-        min-height: 155px;   
+        display: grid;
+        grid-template-rows: repeat(2, auto);
+        align-content: space-between;
+        grid-auto-rows: auto;  
     }
 
     &__headline {
         font-size: 40px;
-        line-height: 125%;
+        line-height: 80%;
         font-weight: 700;
         color: $main-color2;
     }
@@ -36,16 +49,20 @@
         font-weight: 400;
         font-size: 24px;
         line-height: 146%;
+        text-align: justify;
     }
 
     &__social {
-        /* display: flex;
-        align-items: center;
-        justify-content: space-between; */
+    }
+
+    &__icon {
+        margin-right: 29px;
     }
 
     &__arrwrap {
         display: flex;
+        width: 292px;
+        border: 1px solid $main-color2;
     }
 
     &-arrow {
@@ -54,26 +71,63 @@
         justify-content: center;
         width: 146px;
         height: 56px;
-
+        
         &_left {
-            background-color: $main-color2;
+            background-color: $main-color2;  
         }
 
-        &_right {
+        &_right {  
             background-color: $main-color3;
         }
         
         &__body {
-            
             width: 82px;
             height: 2px;
 
-            &_left {
+            &_left, &_right {
+                position: relative;
                 background-color: $main-color1;
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    top: 3px;
+                    left: -2px;
+                    height: 2px;
+                    width: 10px;
+                    transform: rotate(47deg);
+                    background-color: $main-color1;
+                    
+                }
+        
+                &:after {
+                    content: '';
+                    position: absolute;
+                    top: -3px;
+                    left: -2px;
+                    height: 2px;
+                    width: 10px;
+                    transform: rotate(-47deg);
+                    background-color: $main-color1;
+                }
             }
 
             &_right {
                 background-color: $main-color2;
+
+                &:before {
+                    left: auto;
+                    right: -2px;
+                    transform: rotate(-47deg);
+                    background-color: $main-color2;
+                }
+        
+                &:after {
+                    left: auto;
+                    right: -2px;
+                    transform: rotate(47deg);
+                    background-color: $main-color2;
+                }
             }
         }
     }
