@@ -4,4 +4,77 @@
     &__title {
         color: $main-color2;
     }
+
+    &__wrapper {
+        
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: 626px 788px;
+        grid-template-rows: minmax(155px, auto) minmax(120px, auto) minmax(120px, auto)  ;
+
+        
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        min-height: 155px;   
+    }
+
+    &__headline {
+        font-size: 40px;
+        line-height: 125%;
+        font-weight: 700;
+        color: $main-color2;
+    }
+
+    &__descr {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 146%;
+    }
+
+    &__social {
+        /* display: flex;
+        align-items: center;
+        justify-content: space-between; */
+    }
+
+    &__arrwrap {
+        display: flex;
+    }
+
+    &-arrow {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 146px;
+        height: 56px;
+
+        &_left {
+            background-color: $main-color2;
+        }
+
+        &_right {
+            background-color: $main-color3;
+        }
+        
+        &__body {
+            
+            width: 82px;
+            height: 2px;
+
+            &_left {
+                background-color: $main-color1;
+            }
+
+            &_right {
+                background-color: $main-color2;
+            }
+        }
+    }
 }
