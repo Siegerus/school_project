@@ -6,14 +6,20 @@
         
         <div class="students__wrapper">
             <div class="students__content">
-                <div class="students__img"><img src="img/students_photo.png" alt="photo"></div>
+                <div class="students__img">
+                    <picture>
+                        <source media="(max-width: 992px)" srcset="img/students_photo-mobile.png"">
+                        <source media="(max-width: 993px)" srcset="img/students_photo.png">
+                        <img src="img/students_photo.png" alt="photo">
+                    </picture>
+                </div>
                 <div class="students__item">
                     <div class="students__headline">Начало</div>
                     <div class="students__descr">Знакомьтесь: это — Аня. Свой первый пробник Аня написала на 53 балла. Она никак не могла разобраться в некоторых темах, особенно в геометрии и логарифмах. Тогда она обратилась за помощью к нам.</div>
                 </div>
                 <div class="students__item">
                     <div class="students__headline">Дорога</div>
-                    <div class="students__descr">Мы вместе составили ей самую подходящую программу и сопровождали ее на всем процессе обучения.</div>
+                    <div class="students__descr students__descr_lettspace">Мы вместе составили ей самую подходящую программу и сопровождали ее на всем процессе обучения.</div>
                 </div>
                 <div class="students__item">
                     <div class="students__headline">У цели</div>
