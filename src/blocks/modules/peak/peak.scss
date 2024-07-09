@@ -1,7 +1,7 @@
 .peak {
     position: relative;
     padding-bottom: 120px;
-    background: url('../img/bg_peak.svg') right 355px bottom / 1157px 898px  no-repeat $main-color2; 
+    background: url('../img/bg_peak.svg') right 46.5% bottom / 1157px 898px  no-repeat $main-color2; 
 
     &__wrapper {
         display: grid;
@@ -74,21 +74,12 @@
     }
 }
 
-@media (max-width: 1800px) {
-    .peak {
-        background-position: right 265px bottom ;
-    }
-    
-}
-
 @media (max-width: 1679px) {
     .container {
         max-width: 1320px;
     }
 
     .peak {
-        background-position: center bottom;
-
         &__wrapper {
             grid-template-columns: repeat(4, minmax(305px, auto));
         }
