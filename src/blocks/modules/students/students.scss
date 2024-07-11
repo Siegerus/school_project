@@ -1,4 +1,5 @@
 .students {
+    padding-bottom: 120px;
     background-color: $main-color1;
 
     &__border {
@@ -231,6 +232,8 @@
     }
 
     .students {
+        padding-bottom: 80px;
+        
         &__border {
             min-height: 161px;
         }

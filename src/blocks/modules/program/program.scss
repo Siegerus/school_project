@@ -1,0 +1,147 @@
+.program {
+    padding: 120px 0;
+    min-height: 905px;
+    background-color: $main-color2;
+
+    &__wrapper {
+        margin-top: 0;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-top: 0;
+
+        &-title {
+            line-height: 80%;
+        }
+
+        &-descr {
+            margin-top: 67px;
+            line-height: 130%;
+            text-align: right;
+        }
+    }
+
+    &__btn {
+        margin-top: 115px;
+        border: 1px solid $main-color1;
+        color: $main-color1;
+    };
+
+    &-list {
+        &__title {
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 146%;
+            color: $main-color3;
+        }
+
+        &__content {
+            max-width: 735px;
+            font-size: 32px;
+            line-height: 119%;
+        }
+
+        &__other {
+            margin-top: 40px;
+            list-style-type: none;
+
+            li {
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 146%;
+                text-align: justify;
+
+                &:before {
+                    content: "—";
+                    position: relative;
+                    left: -8px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1679px) {
+
+    .container {
+        max-width: 1320px;
+    }
+
+    .program {
+        min-height: unset;
+    }
+}
+@media (max-width: 1440px) {
+    .container {
+        max-width: 1120px;
+    }
+
+    .program {
+        &__btn {
+            margin-top: 90px;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .container {
+        max-width: 968px;
+    }
+
+    .program {
+        &__btn {
+            margin-top: 70px;
+        }
+
+        &-list {
+            &__title {
+                font-size: 20px; 
+            }
+
+            &__text {
+                font-size: 24px;
+            }
+        }
+    }
+}
+@media (max-width: 992px) {
+
+    .container {
+        max-width: 720px;
+    }
+
+    .program {
+        &__btn {
+            margin-top: 70px;
+        }
+
+        &-list {
+            &__title {
+                font-size: 18px; 
+            }
+
+            &__text {
+                font-size: 22px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {  
+
+    .container {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 429px) {
+    .container {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+}

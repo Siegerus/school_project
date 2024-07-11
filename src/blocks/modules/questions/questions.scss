@@ -17,36 +17,6 @@
         color: $main-color1;
     }
 
-    &__wrapper {
-        display: flex;
-        margin-top: 80px;
-        align-items: flex-start;
-        justify-content: space-between;
-    }
-
-    &__item {
-        margin-top: 54px;
-        max-width: 626px;
-        overflow: hidden;
-
-        &-title {
-            font-weight: 700;
-            font-size: 40px;
-            line-height: 125%;
-            text-align: right;
-            color: $main-color3;
-        }
-
-        &-descr {
-            margin-top: 60px;
-            font-weight: 400;
-            font-size: 24px;
-            line-height: 146%;
-            text-align: justify;
-            color: $main-color3;
-        }
-    }
-
     &-list {
         min-width: 788px;
         max-width: 788px;
@@ -128,14 +98,6 @@
             color: $main-color1;
         }
 
-        &__item {
-            max-width: 600px; 
-            
-            &-title {
-                font-size: 39px;
-            }  
-        }
-
         &-list {
             min-width: 630px;
             max-width: 630px;
@@ -152,18 +114,6 @@
     .questions {
         &__tracks, &__practice, &__video {
             font-size: 36px;
-        }
-
-        &__item {
-            max-width: 495px; 
-            
-            &-title {
-                font-size: 36px;
-            }  
-
-            &-descr {
-                font-size: 22px;
-            }
         }
 
         &-list {
@@ -187,24 +137,8 @@
     }
 
     .questions {
-        &__wrapper {
-            margin-top: 65px;
-        }
-
         &__tracks, &__practice, &__video {
             font-size: 32px;
-        }
-
-        &__item {
-            max-width: 447px; 
-            
-            &-title {
-                font-size: 32px;
-            }  
-
-            &-descr {
-                font-size: 20px;
-            }
         }
 
         &-list {
@@ -228,10 +162,6 @@
 
     .questions {
         padding-bottom: 100px;
-        
-        &__wrapper {
-            margin-top: 45px;
-        }
 
         &__header {
             min-height: 150px;
@@ -241,18 +171,6 @@
             max-width: 180px;
             font-size: 27px;
             text-align: center;
-        }
-
-        &__item {
-            max-width: 320px; 
-            
-            &-title {
-                font-size: 29px;
-            }  
-
-            &-descr {
-                margin-top: 40px;
-            }
         }
 
         &-list {
@@ -285,12 +203,6 @@
     .questions {
         padding-bottom: 80px;
 
-        &__wrapper {
-            margin-top: 31px;
-            align-items: center;
-            flex-direction: column;
-        }
-
         &__header {
             min-height: 226px;
             flex-direction: column;
@@ -308,23 +220,6 @@
         
         &__practice {
             margin: 40px 0;
-        }
-
-        &__item {
-            margin-top: 0;
-            max-width: 100%; 
-            
-            &-title {
-                font-size: 32px;
-                line-height: 131%;  
-                text-align: left;
-            }  
-
-            &-descr {
-                margin-top: 22px;
-                font-size: 16px;
-                line-height: 162%;
-            }
         }
 
         &__block {
@@ -372,12 +267,6 @@
     .questions {
         padding-bottom: 80px;
 
-        &__wrapper {
-            margin-top: 31px;
-            align-items: center;
-            flex-direction: column;
-        }
-
         &__header {
             min-height: 215px;
 
@@ -391,20 +280,9 @@
             &_content {
                 margin-top: 15px;
             }
-        
-            &-title {
-                font-size: 25px;
-            }  
-
-            &-descr {
-                margin-top: 22px;
-                font-size: 16px;
-                line-height: 162%;
-            }
         }
 
         &-list {
-
             &__text {
                 font-size: 22px;
             }
