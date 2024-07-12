@@ -137,6 +137,47 @@
         max-width: 100%;
         padding: 0 20px;
     }
+
+    .program {
+        padding: 80px 0;
+
+        &__wrapper {
+            margin-top: 0;
+        }
+
+        &__item {
+           align-items: flex-start;
+
+           &-title {
+            line-height: 85%;
+           }
+
+           &-descr {
+            margin-top: 20px;
+            text-align: left;
+           }
+        }
+
+        &__btn {
+            margin-top: 30px;
+            padding: 27px 45px;
+        }
+
+        &-list {
+            &__wrapper {
+                min-height: 90px;
+            }
+
+            &__title {
+                font-size: 16px;
+                line-height: 162%;
+            }
+
+            &__text {
+                font-size: 22px;
+            }
+        }
+    }
 }
 
 @media (max-width: 429px) {
