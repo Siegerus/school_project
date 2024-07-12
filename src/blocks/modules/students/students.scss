@@ -210,6 +210,8 @@
     }
 
     .students {
+        padding-bottom: 80px;
+        
         &__content {
             grid-template-columns: 390px 300px;
             column-gap: 30px;

@@ -186,6 +186,8 @@
     }
 
     .teacher {
+        padding-bottom: 80px;
+
         &__item{
             margin-top: 0;
             max-width: 100%;
@@ -229,9 +231,7 @@
         padding: 0 20px;
     }
 
-    .teacher {
-        padding-bottom: 80px;  
-
+    .teacher { 
         &__border {
             min-height: 162px;
         }
