@@ -1,13 +1,13 @@
 .peak {
     position: relative;
     padding-bottom: 120px;
-    background: url('../img/bg_peak.svg') right 46.5% bottom / 1157px 898px  no-repeat $main-color2; 
+    background: url("../img/bg_peak.svg") right 46.5% bottom / 1157px 898px  no-repeat $main-color2;
 
     &__wrapper {
         display: grid;
         margin-top: 80px;
         grid-template-columns: repeat(4, minmax(379px, auto));
-        grid-template-rows:  minmax(140px, auto);
+        grid-template-rows: minmax(140px, auto);
         grid-auto-rows: auto;
         grid-auto-columns: auto;
         align-items: center;
@@ -58,13 +58,13 @@
             margin-right: 10px;
         }
     }
-    
+
     &__img {
         position: absolute;
-        left: 50%;
         bottom: -80px;
-        transform: translateX(-50%);
+        left: 50%;
         width: 1105px;
+        transform: translateX(-50%);
 
         img {
             width: 100%;
@@ -94,14 +94,14 @@
         }
     }
 }
-@media (max-width: 1440px) {
 
+@media (max-width: 1440px) {
     .container {
         max-width: 1120px;
     }
 
     .peak {
-        background: url('../img/bg_peak.svg') center bottom / auto 830px  no-repeat $main-color2;
+        background: url("../img/bg_peak.svg") center bottom / auto 830px  no-repeat $main-color2;
 
         &__wrapper {
             grid-template-columns: repeat(4, minmax(265px, auto));
@@ -109,7 +109,7 @@
 
         &__label {
             max-width: 200px;
-            
+
             &_bauman, &_lomonosov {
                 min-width: 280px;
             }
@@ -139,23 +139,22 @@
 }
 
 @media (max-width: 1200px) {
-
     .container {
         max-width: 968px;
     }
 
     .peak {
-        background: url('../img/bg_peak.svg') center bottom / auto 788px  no-repeat $main-color2;
+        background: url("../img/bg_peak.svg") center bottom / auto 788px  no-repeat $main-color2;
 
         &__wrapper {
             grid-template-columns: repeat(4, minmax(225px, auto));
-            grid-template-rows:  minmax(125px, auto);
+            grid-template-rows: minmax(125px, auto);
             column-gap: 15px;
         }
 
         &__label {
             max-width: 165px;
-            
+
             &_bauman, &_lomonosov {
                 min-width: 260px;
             }
@@ -176,7 +175,6 @@
             &_mfti {
                 justify-self: end;
             }
-
         }
 
         &__img {
@@ -185,25 +183,25 @@
         }
     }
 }
-@media (max-width: 992px) {
 
+@media (max-width: 992px) {
     .container {
         max-width: 720px;
     }
 
     .peak {
-        background: url('../img/bg_peak.svg') center bottom / auto 720px  no-repeat $main-color2;
+        background: url("../img/bg_peak.svg") center bottom / auto 720px  no-repeat $main-color2;
 
         &__wrapper {
             grid-template-columns: repeat(4, minmax(170px, auto));
-            grid-template-rows:  minmax(125px, auto);
+            grid-template-rows: minmax(125px, auto);
             column-gap: 15px;
             row-gap: 120px;
         }
 
         &__label {
             max-width: 125px;
-            
+
             &_bauman, &_lomonosov {
                 min-width: 215px;
             }
@@ -225,7 +223,6 @@
             &_mfti {
                 justify-self: end;
             }
-
         }
 
         &__img {
@@ -234,15 +231,17 @@
         }
     }
 }
+
 @media (max-width: 768px) {
     .container {
         max-width: 100%;
         padding: 0 20px;
     }
+
     .peak {
         padding-bottom: 0;
         min-height: 1699px;
-        background: url('../img/bg_peak-mobile.svg') center bottom -12px / contain  no-repeat $main-color2;
+        background: url("../img/bg_peak-mobile.svg") center bottom -12px / contain  no-repeat $main-color2;
 
         &__wrapper {
             align-items: center;
@@ -258,52 +257,52 @@
             grid-row: unset;
 
             &_bauman {
-                margin: 0;
-                max-width: 263px;
                 order: 4;
+                max-width: 263px;
+                margin: 0;
             }
 
             &_lomonosov {
-                max-width: 239px;
                 order: 2;
+                max-width: 239px;
             }
 
             &_misis {
-                max-width: 167px;
                 order: 1;
+                max-width: 167px;
             }
 
             &_sct {
                 align-self: unset;
-                margin: 0;
-                max-width: 319px;
                 order: 7;
+                max-width: 319px;
+                margin: 0;
             }
 
-            &_mifi  {
-                justify-self: unset;
-                max-width: 164px;
+            &_mifi {
                 order: 3;
+                max-width: 164px;
+                justify-self: unset;
             }
 
             &_economic {
-                margin: 0;
+                order: 6;
                 max-width: 120px;
-                order: 6;  
+                margin: 0;
             }
 
             &_mfti {
+                order: 8;
+                max-width: 238px;
                 margin: 0;
                 justify-self: unset;
-                max-width: 238px;
-                order: 8;
             }
 
             &_itmo {
+                order: 5;
+                max-width: 148px;
                 margin: 0;
                 justify-self: unset;
-                max-width: 148px;
-                order: 5;
             }
         }
 
@@ -321,7 +320,7 @@
         padding: 0 20px;
     }
 
-     .peak {
+    .peak {
         min-height: 1675px;
 
         &__label {
@@ -334,7 +333,6 @@
             &_itmo {
                 max-width: 125px;
             }
-
         }
 
         &__img {
@@ -342,6 +340,5 @@
             width: 320px;
             height: 310px;
         }
-     }
+    }
 }
-

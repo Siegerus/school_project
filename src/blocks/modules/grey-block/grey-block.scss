@@ -29,47 +29,42 @@
 }
 
 @media (max-width: 1679px) {
-
     .container {
         max-width: 1320px;
     }
 
     .grey-block {
-
         &__item {
             max-width: 600px;
         }
-    
+
         &__title {
             font-size: 39px;
         }
     }
 }
-@media (max-width: 1440px) {
 
+@media (max-width: 1440px) {
     .container {
         max-width: 1120px;
     }
 
     .grey-block {
-
         &__item {
-            max-width: 495px; 
+            max-width: 495px;
         }
-    
+
         &__title {
             font-size: 36px;
         }
-    
+
         &__descr {
             font-size: 22px;
         }
-
     }
 }
 
 @media (max-width: 1200px) {
-
     .container {
         max-width: 968px;
     }
@@ -78,21 +73,20 @@
         margin-top: 65px;
 
         &__item {
-           max-width: 447px;
+            max-width: 447px;
         }
-    
+
         &__title {
             font-size: 32px;
         }
-    
+
         &__descr {
             font-size: 20px;
         }
-
     }
 }
-@media (max-width: 992px) {
 
+@media (max-width: 992px) {
     .container {
         max-width: 720px;
     }
@@ -101,42 +95,41 @@
         margin-top: 45px;
 
         &__item {
-           max-width: 320px;
+            max-width: 320px;
         }
-    
+
         &__title {
             font-size: 29px;
         }
-    
+
         &__descr {
             margin-top: 40px;
         }
     }
 }
 
-@media (max-width: 768px) {  
-
+@media (max-width: 768px) {
     .container {
         max-width: 100%;
         padding: 0 20px;
     }
 
     .grey-block {
-        margin-top: 31px;
-        align-items: center;
         flex-direction: column;
+        align-items: center;
+        margin-top: 31px;
 
         &__item {
             margin-top: 0;
             max-width: 100%;
         }
-    
+
         &__title {
             font-size: 32px;
-            line-height: 131%;  
+            line-height: 131%;
             text-align: left;
         }
-    
+
         &__descr {
             margin-top: 22px;
             font-size: 16px;
@@ -152,19 +145,18 @@
     }
 
     .grey-block {
-        margin-top: 31px;
-        align-items: center;
         flex-direction: column;
-    
+        align-items: center;
+        margin-top: 31px;
+
         &__title {
             font-size: 25px;
         }
-    
+
         &__descr {
             margin-top: 22px;
             font-size: 16px;
             line-height: 162%;
         }
-
     }
 }

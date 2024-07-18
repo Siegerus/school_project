@@ -1,6 +1,6 @@
 .program {
-    padding: 120px 0;
     min-height: 905px;
+    padding: 120px 0;
     background-color: $main-color2;
 
     &__wrapper {
@@ -28,7 +28,7 @@
         margin-top: 115px;
         border: 1px solid $main-color1;
         color: $main-color1;
-    };
+    }
 
     &-list {
         &__title {
@@ -54,7 +54,7 @@
                 line-height: 146%;
                 text-align: justify;
 
-                &:before {
+                &::before {
                     content: "—";
                     position: relative;
                     left: -8px;
@@ -65,7 +65,6 @@
 }
 
 @media (max-width: 1679px) {
-
     .container {
         max-width: 1320px;
     }
@@ -74,6 +73,7 @@
         min-height: unset;
     }
 }
+
 @media (max-width: 1440px) {
     .container {
         max-width: 1120px;
@@ -87,7 +87,6 @@
 }
 
 @media (max-width: 1200px) {
-
     .container {
         max-width: 968px;
     }
@@ -99,7 +98,7 @@
 
         &-list {
             &__title {
-                font-size: 20px; 
+                font-size: 20px;
             }
 
             &__text {
@@ -108,22 +107,22 @@
         }
     }
 }
-@media (max-width: 992px) {
 
+@media (max-width: 992px) {
     .container {
         max-width: 720px;
     }
 
     .program {
         padding: 80px 0;
-        
+
         &__btn {
             margin-top: 70px;
         }
 
         &-list {
             &__title {
-                font-size: 18px; 
+                font-size: 18px;
             }
 
             &__text {
@@ -133,8 +132,7 @@
     }
 }
 
-@media (max-width: 768px) {  
-
+@media (max-width: 768px) {
     .container {
         max-width: 100%;
         padding: 0 20px;
@@ -148,16 +146,16 @@
         }
 
         &__item {
-           align-items: flex-start;
+            align-items: flex-start;
 
-           &-title {
-            line-height: 85%;
-           }
+            &-title {
+                line-height: 85%;
+            }
 
-           &-descr {
-            margin-top: 20px;
-            text-align: left;
-           }
+            &-descr {
+                margin-top: 20px;
+                text-align: left;
+            }
         }
 
         &__btn {

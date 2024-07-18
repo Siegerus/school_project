@@ -37,7 +37,7 @@
         display: grid;
         grid-template-rows: repeat(2, auto);
         align-content: space-between;
-        grid-auto-rows: auto;  
+        grid-auto-rows: auto;
     }
 
     &__headline {
@@ -52,9 +52,6 @@
         font-size: 24px;
         line-height: 146%;
         text-align: justify;
-    }
-
-    &__social {
     }
 
     &__icon {
@@ -73,15 +70,15 @@
         justify-content: center;
         width: 146px;
         height: 56px;
-        
+
         &_left {
-            background-color: $main-color2;  
+            background-color: $main-color2;
         }
 
-        &_right {  
+        &_right {
             background-color: $main-color3;
         }
-        
+
         &__body {
             width: 82px;
             height: 2px;
@@ -90,25 +87,24 @@
                 position: relative;
                 background-color: $main-color1;
 
-                &:before {
-                    content: '';
+                &::before {
+                    content: "";
                     position: absolute;
                     top: 3px;
                     left: -2px;
-                    height: 2px;
                     width: 10px;
+                    height: 2px;
                     transform: rotate(47deg);
                     background-color: $main-color1;
-                    
                 }
-        
-                &:after {
-                    content: '';
+
+                &::after {
+                    content: "";
                     position: absolute;
                     top: -3px;
                     left: -2px;
-                    height: 2px;
                     width: 10px;
+                    height: 2px;
                     transform: rotate(-47deg);
                     background-color: $main-color1;
                 }
@@ -117,16 +113,16 @@
             &_right {
                 background-color: $main-color2;
 
-                &:before {
-                    left: auto;
+                &::before {
                     right: -2px;
+                    left: auto;
                     transform: rotate(-47deg);
                     background-color: $main-color2;
                 }
-        
-                &:after {
-                    left: auto;
+
+                &::after {
                     right: -2px;
+                    left: auto;
                     transform: rotate(47deg);
                     background-color: $main-color2;
                 }
@@ -152,6 +148,7 @@
         }
     }
 }
+
 @media (max-width: 1440px) {
     .container {
         max-width: 1120px;
@@ -171,7 +168,7 @@
         &__img {
             img {
                 object-fit: contain;
-            }  
+            }
         }
     }
 }
@@ -193,17 +190,15 @@
 
         &__descr {
             margin-top: 15px;
+            font-size: 20px;
         }
 
         &__headline {
             font-size: 32px;
         }
-
-        &__descr {
-            font-size: 20px;
-        }
     }
 }
+
 @media (max-width: 992px) {
     .container {
         max-width: 720px;
@@ -211,7 +206,7 @@
 
     .students {
         padding-bottom: 80px;
-        
+
         &__content {
             grid-template-columns: 390px 300px;
             column-gap: 30px;
@@ -224,10 +219,10 @@
         &__headline {
             font-size: 28px;
         }
-
     }
 }
-@media (max-width: 768px) {  
+
+@media (max-width: 768px) {
     .container {
         max-width: 100%;
         padding: 0 20px;
@@ -235,14 +230,14 @@
 
     .students {
         padding-bottom: 80px;
-        
+
         &__border {
             min-height: 161px;
         }
 
-        &__wrapper  {
+        &__wrapper {
             margin-top: 40px;
-        } 
+        }
 
         &__content {
             grid-template-columns: 1fr;
@@ -256,7 +251,7 @@
             line-height: 147%;
 
             &_lettspace {
-                letter-spacing: -0.3px; 
+                letter-spacing: -0.3px;
             }
         }
 
@@ -265,14 +260,14 @@
         }
 
         &__img {
-            margin: 0 auto;
             grid-row: unset;
             max-width: 420px;
+            margin: 0 auto;
         }
 
         &__arrwrap {
+            width: 390px;
             margin: 0 auto;
-            width: 390px;  
         }
 
         &-arrow {
@@ -286,7 +281,7 @@
 
                 &_left {
                     position: relative;
-                    right: 25px;    
+                    right: 25px;
                 }
             }
         }
@@ -305,7 +300,7 @@
         }
 
         &__arrwrap {
-            width: 100%;  
+            width: 100%;
         }
 
         &__descr {

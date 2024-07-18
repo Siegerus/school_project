@@ -1,7 +1,8 @@
 .promo {
     min-height: 1050px;
-    background: url('../img/bg_math2.svg') bottom right / 781px 900px no-repeat,
-                url('../img/bg_ellipse.png') center / cover no-repeat;
+    background:
+        url("../img/bg_math2.svg") bottom right / 781px 900px no-repeat,
+        url("../img/bg_ellipse.png") center / cover no-repeat;
     background-color: $main-color1;
 
     &__wrapper {
@@ -10,8 +11,9 @@
     }
 
     &__img {
-        margin-top: 9px; 
+        margin-top: 9px;
         max-width: 788px;
+
         img {
             width: 100%;
             height: 100%;
@@ -54,10 +56,10 @@
 
     &__btn {
         display: block;
-        margin-top: 60px;
-        padding: 26px 40px;
         max-width: 430px;
         border: 1px solid #424242;
+        padding: 26px 40px;
+        margin-top: 60px;
         border-radius: 35px;
         color: $main-color2;
         font-size: 24px;
@@ -89,7 +91,6 @@
     }
 }
 
-
 @media (max-width: 1679px) {
     .container {
         max-width: 1320px;
@@ -97,10 +98,11 @@
 
     .promo {
         min-height: 930px;
-        background: url('../img/bg_math2.svg') bottom right / 650px 780px no-repeat,
-                url('../img/bg_ellipse.png') center / cover no-repeat;
+        background:
+            url("../img/bg_math2.svg") bottom right / 650px 780px no-repeat,
+            url("../img/bg_ellipse.png") center / cover no-repeat;
         background-color: $main-color1;
-        
+
         &__content {
             max-width: 560px;
         }
@@ -125,7 +127,7 @@
         &__analys, &__card, &__example {
             font-size: 27px;
         }
-    } 
+    }
 }
 
 @media (max-width: 1440px) {
@@ -135,10 +137,11 @@
 
     .promo {
         min-height: 840px;
-        background: url('../img/bg_math2.svg') bottom right / 600px 690px no-repeat,
-                    url('../img/bg_ellipse.png') center / cover no-repeat;
-        background-color: $main-color1;   
-        
+        background:
+            url("../img/bg_math2.svg") bottom right / 600px 690px no-repeat,
+            url("../img/bg_ellipse.png") center / cover no-repeat;
+        background-color: $main-color1;
+
         &__wrapper {
             align-items: flex-end;
         }
@@ -178,10 +181,11 @@
         max-width: 968px;
     }
 
-    .promo  {
+    .promo {
         min-height: 755px;
-        background: url('../img/bg_math2.svg') bottom right / 500px 605px no-repeat,
-                    url('../img/bg_ellipse.png') center / cover no-repeat;
+        background:
+            url("../img/bg_math2.svg") bottom right / 500px 605px no-repeat,
+            url("../img/bg_ellipse.png") center / cover no-repeat;
         background-color: $main-color1;
 
         &__title {
@@ -202,14 +206,14 @@
         }
 
         &__img {
-            max-width: 400px; 
+            max-width: 400px;
         }
 
-        &__btn {  
-            margin-top: 40px;
-            padding: 26px 40px;
+        &__btn {
             max-width: 375px;
-            font-size: 19px;  
+            padding: 26px 40px;
+            margin-top: 40px;
+            font-size: 19px;
         }
 
         &__analys, &__card, &__example {
@@ -217,15 +221,17 @@
         }
     }
 }
+
 @media (max-width: 992px) {
     .container {
         max-width: 720px;
     }
 
-    .promo  {
+    .promo {
         min-height: 670px;
-        background: url('../img/bg_math2.svg') bottom right / 395px 555px no-repeat,
-                    url('../img/bg_ellipse.png') center/cover no-repeat;
+        background:
+            url("../img/bg_math2.svg") bottom right / 395px 555px no-repeat,
+            url("../img/bg_ellipse.png") center/cover no-repeat;
         background-color: $main-color1;
 
         &__title {
@@ -246,14 +252,14 @@
         }
 
         &__img {
-            max-width: 335px; 
+            max-width: 335px;
         }
 
-        &__btn {  
-            margin-top: 30px;
-            padding: 15px 23px;
+        &__btn {
             max-width: 270px;
-            font-size: 15px;  
+            padding: 15px 23px;
+            margin-top: 30px;
+            font-size: 15px;
         }
 
         &__analys, &__card, &__example {
@@ -261,23 +267,25 @@
         }
     }
 }
-@media (max-width: 768px) {                                                                              
+
+@media (max-width: 768px) {
     .container {
         max-width: 100%;
         padding: 0 20px;
     }
 
     .promo {
-        position: relative;             
+        position: relative;
         min-height: 1060px;
-        background: url('../img/bg_math2.svg') bottom left -50px / 394px 407px no-repeat;
-                    /* url('../img/bg_ellipse.png') top 175px center / 769px 500px no-repeat; */
-        background-color: $main-color1; 
-        overflow-x: hidden;  
-        
+        background: url("../img/bg_math2.svg") bottom left -50px / 394px 407px no-repeat;
+
+        /* url('../img/bg_ellipse.png') top 175px center / 769px 500px no-repeat; */
+        background-color: $main-color1;
+        overflow-x: hidden;
+
         &__wrapper {
-            align-items: center;
             flex-direction: column;
+            align-items: center;
             max-width: 100%;
         }
 
@@ -316,12 +324,12 @@
             font-size: 22px;
         }
 
-        &__btn {  
-            margin: 0 auto;
-            margin-top: 60px;
-            padding: 27px 35px;
+        &__btn {
             max-width: 390px;
-            font-size: 22px;  
+            margin: 0 auto;
+            padding: 27px 35px;
+            margin-top: 60px;
+            font-size: 22px;
         }
 
         &__footer {
@@ -333,12 +341,13 @@
             margin: 26px 0;
             text-align: unset;
         }
-    
+
         &__example {
             text-align: unset;
         }
     }
 }
+
 @media (max-width: 429px) {
     .container {
         max-width: 100%;
@@ -347,7 +356,7 @@
 
     .promo {
         min-height: 972px;
-        
+
         &__title {
             margin-top: 26px;
             padding-right: 0;
@@ -375,11 +384,11 @@
             font-size: 17px;
         }
 
-        &__btn {  
-            margin-top: 35px;
-            padding: 22px 16px;
-            font-size: 17px;  
+        &__btn {
             max-width: 280px;
+            padding: 22px 16px;
+            margin-top: 35px;
+            font-size: 17px;
         }
 
         &__footer {

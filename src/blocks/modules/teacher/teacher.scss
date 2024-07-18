@@ -23,7 +23,7 @@
 
         span {
             color: $main-color1;
-         }  
+        }
     }
 
     &__subtitle {
@@ -52,9 +52,9 @@
     &__photo {
         position: absolute;
         left: 50%;
-        transform: translateX(-50%);
         width: 602px;
         height: 712px;
+        transform: translateX(-50%);
 
         img {
             width: 100%;
@@ -81,7 +81,7 @@
     }
 
     .teacher {
-        &__item{
+        &__item {
             max-width: 545px;
         }
 
@@ -109,14 +109,14 @@
         }
     }
 }
-@media (max-width: 1440px) {
 
+@media (max-width: 1440px) {
     .container {
         max-width: 1120px;
     }
 
     .teacher {
-        &__item{
+        &__item {
             max-width: 545px;
         }
 
@@ -138,13 +138,12 @@
 }
 
 @media (max-width: 1200px) {
-
     .container {
         max-width: 968px;
     }
 
     .teacher {
-        &__item{
+        &__item {
             max-width: 430px;
         }
 
@@ -179,8 +178,8 @@
         }
     }
 }
-@media (max-width: 992px) {
 
+@media (max-width: 992px) {
     .container {
         max-width: 720px;
     }
@@ -188,7 +187,7 @@
     .teacher {
         padding-bottom: 80px;
 
-        &__item{
+        &__item {
             margin-top: 0;
             max-width: 100%;
         }
@@ -224,19 +223,19 @@
         }
     }
 }
-@media (max-width: 768px) {  
 
+@media (max-width: 768px) {
     .container {
         max-width: 100%;
         padding: 0 20px;
     }
 
-    .teacher { 
+    .teacher {
         &__border {
             min-height: 162px;
         }
 
-        &__item{
+        &__item {
             margin-top: 0;
             max-width: 100%;
         }
@@ -248,7 +247,7 @@
         }
 
         &__img {
-            margin-top: 40px;   
+            margin-top: 40px;
             max-width: 390px;
             max-height: 542px;
         }
@@ -257,7 +256,6 @@
             margin-top: 30px;
             width: 385px;
             height: 553px;
-            
         }
 
         &__title {
@@ -279,7 +277,7 @@
         }
 
         &__m-visible {
-        display: inline;
+            display: inline;
         }
     }
 }
@@ -299,7 +297,6 @@
         &__photo {
             width: 285px;
             height: 553px;
-            
         }
     }
 }

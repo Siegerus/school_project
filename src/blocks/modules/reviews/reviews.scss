@@ -21,16 +21,17 @@
             &_left {
                 background-color: $main-color2;
 
-                &:before {
+                &::before {
                     background-color: $main-color2;
                 }
-                
-                &:after {
+
+                &::after {
                     background-color: $main-color2;
-                } 
+                }
             }
         }
     }
+
     &__wrapper {
         margin-top: 80px;
     }
@@ -39,10 +40,10 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin: 0 auto;
-        padding: 40px;
         width: 1274px;
+        margin: 0 auto;
         border: 1px solid $main-color1;
+        padding: 40px;
     }
 
     &__body {
@@ -75,4 +76,4 @@
         line-height: 119%;
         color: $main-color1;
     }
-} 
+}

@@ -28,19 +28,17 @@
             &_content {
                 display: none;
                 margin-top: 80px;
-                
             }
         }
 
         &__content {
-            margin: 32px 0 40px 0;
+            margin: 32px 0 40px;
             font-weight: 400;
             font-size: 24px;
             line-height: 146%;
             text-align: justify;
             color: $main-color3;
             transition: 0.6s all;
-            
         }
 
         &__wrapper {
@@ -103,7 +101,6 @@
             max-width: 630px;
         }
     }
-
 }
 
 @media (max-width: 1440px) {
@@ -155,6 +152,7 @@
         }
     }
 }
+
 @media (max-width: 992px) {
     .container {
         max-width: 720px;
@@ -194,7 +192,8 @@
         }
     }
 }
-@media (max-width: 768px) {                                                                              
+
+@media (max-width: 768px) {
     .container {
         max-width: 100%;
         padding: 0 20px;
@@ -204,11 +203,10 @@
         padding-bottom: 80px;
 
         &__header {
-            min-height: 226px;
             flex-direction: column;
             align-items: flex-start;
             justify-content: center;
-
+            min-height: 226px;
         }
 
         &__tracks, &__practice, &__video {
@@ -217,7 +215,7 @@
             line-height: 70%;
             text-align: unset;
         }
-        
+
         &__practice {
             margin: 40px 0;
         }
@@ -228,9 +226,9 @@
         }
 
         &-list {
-            margin: 0;
             min-width: 100%;
             max-width: 100%;
+            margin: 0;
 
             &__item {
                 &_content {
@@ -244,7 +242,7 @@
             }
 
             &__content {
-                margin: 10px 0 20px 0;
+                margin: 10px 0 20px;
                 font-size: 16px;
             }
 
@@ -258,6 +256,7 @@
         }
     }
 }
+
 @media (max-width: 429px) {
     .container {
         max-width: 100%;
@@ -269,10 +268,9 @@
 
         &__header {
             min-height: 215px;
-
         }
 
-        &__tracks, &__practice, &__video {    
+        &__tracks, &__practice, &__video {
             font-size: 25px;
         }
 
