@@ -46,14 +46,11 @@
     }
 
     &__body {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
         width: 794px;
-        min-height: 442px;
     }
 
     &__descr {
+        margin-top: 80px;
         font-weight: 400;
         font-size: 24px;
         line-height: 146%;
@@ -74,5 +71,10 @@
         font-size: 32px;
         line-height: 119%;
         color: $main-color1;
+    }
+
+    &__photo {
+        width: 320px;
+        height: 440px;
     }
 } 
