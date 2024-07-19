@@ -297,6 +297,46 @@
         &__subtitle {
             font-size: 22px;
         }
+
+        &-item {
+            padding: 40px 0 34px 20px;
+
+            &__header {
+                flex-direction: row;
+                align-items: flex-end;
+            }
+
+            &__number {
+                font-size: 62px;
+                line-height: 65%;
+            }
+    
+            &__title {
+                font-size: 22px;
+                line-height: 50%;
+            }
+
+            &__price {
+                font-size: 36px;
+            }
+
+            &__support, &__month {
+                font-size: 16px;
+            }
+
+            &__label {
+                top: -4px;
+                padding: 6px 16px;
+                width: unset;
+                text-align: center;
+                font-size: 16px;
+                text-wrap: nowrap;
+            }
+        }
+
+        &__btn {
+            margin-top: 40px;
+        }
     }
 }
 
@@ -304,5 +344,12 @@
     .container {
         max-width: 100%;
         padding: 0 20px;
+    }
+
+    .cost {
+        &__wrapper {
+            grid-template-columns: 189px;
+            grid-template-rows: repeat(3, minmax(265px, auto));
+        }
     }
 }

@@ -92,8 +92,14 @@
     }
 
     .program {
+        padding: 80px 0;
+
         &__btn {
             margin-top: 70px;
+        }
+
+        &__wrapper {
+            margin-top: 0;
         }
 
         &-list {
@@ -115,6 +121,10 @@
 
     .program {
         padding: 80px 0;
+
+        &__wrapper {
+            margin-top: 0;
+        }
 
         &__btn {
             margin-top: 70px;
@@ -184,5 +194,17 @@
     .container {
         max-width: 100%;
         padding: 0 20px;
+    }
+
+    .program {
+        &__wrapper {
+            margin-top: 0;
+        }
+
+        &-list {
+            &__wrapper {
+                padding: 23px 0;
+            }
+        }
     }
 }
