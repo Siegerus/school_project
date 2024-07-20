@@ -17,6 +17,17 @@
         color: $main-color1;
     }
 
+    &__content-box {
+        display: block;
+        position: relative;
+        min-height: 300px;
+        overflow: hidden;
+
+        &_active {
+            display: block;
+        }
+    }
+
     &-list {
         min-width: 788px;
         max-width: 788px;
@@ -26,8 +37,14 @@
             border-bottom: 1px solid $main-color1;
 
             &_content {
-                display: block;
+                position: absolute;
+                top: 0;
                 margin-top: 80px;
+
+                &_active {
+                    top: 0;
+                    transition: all 0.6s;
+                }
             }
         }
 
