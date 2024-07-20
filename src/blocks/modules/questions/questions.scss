@@ -26,7 +26,7 @@
             border-bottom: 1px solid $main-color1;
 
             &_content {
-                display: none;
+                display: block;
                 margin-top: 80px;
             }
         }
@@ -54,6 +54,7 @@
 
         &__plus {
             width: 30px;
+            min-width: 30px;
             height: 30px;
 
             img {
