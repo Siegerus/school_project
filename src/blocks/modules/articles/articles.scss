@@ -16,20 +16,12 @@
 
     &__content {
         display: flex;
-        align-items: flex-start;
         justify-content: space-between;
-    }
-
-    &__column {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 31.56%;
+        margin-bottom: 40px;
     }
 
     &-item {
-        max-width: 505px;
-        margin-bottom: 40px;
+        width: 505px;
         border: 1px solid $main-color2;
         
         &__body {
