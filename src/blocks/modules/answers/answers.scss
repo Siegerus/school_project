@@ -1,6 +1,6 @@
 .answers {
     min-height: 194px;
-    padding: 80px 0 120px 0;
+    padding-bottom: 120px;
     background-color: $main-color2;
 
     &__border {
@@ -10,5 +10,119 @@
     &-list {
         min-width: unset;
         max-width: 100%;
+    }
+
+    &__block {
+        margin-top: 80px;
+    }
+}
+
+@media (max-width: 1679px) {
+    .container {
+        max-width: 1320px;
+    }
+
+    .answers  {
+        &__block {
+            width: 100%;
+        }
+
+        &-list {
+            width: 100%;
+            min-width: unset; 
+            max-width: unset; 
+        }
+    }
+}
+
+@media (max-width: 1440px) {
+    .container {
+        max-width: 1120px;
+    }
+
+    .answers  {
+        &-list {
+            width: 100%;
+            min-width: unset; 
+            max-width: unset; 
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 968px;
+    }
+
+    .answers  {
+        &__block {
+            margin-top: 60px;
+        }
+
+        &-list {
+            width: 90%;
+            min-width: unset; 
+            max-width: unset; 
+            margin: 0 auto;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+
+    .answers  {
+        &__block {
+            margin-top: 40px;
+        }
+
+        &-list {
+            width: 93%;
+            min-width: unset; 
+            max-width: unset;
+            margin: 0 auto; 
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+
+    .answers {
+        padding-bottom: 74px;
+
+        &-list{
+            &__wrapper {
+                min-height: unset;
+                padding: 32px 0;
+            }
+
+            &__text {
+                max-width: 287px;
+            }
+        }
+        &__border {
+            min-height: 105px;
+        }
+    }
+}
+
+@media (max-width: 429px) {
+    .container {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+
+    .answers {
+        &-list{
+            &__text {
+               font-size: 21px; 
+            }
+        }
     }
 }

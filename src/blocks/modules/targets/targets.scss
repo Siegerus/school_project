@@ -361,6 +361,11 @@
     }
 
     .targets {
+        &__wrapper {
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+
         &__btn {
             max-width: 280px;
             padding: 22px 16px;
@@ -372,6 +377,7 @@
         }
 
         &__descr {
+            margin-top: 10px;
             font-size: 16px;
         }
     }

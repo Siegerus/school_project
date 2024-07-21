@@ -18,7 +18,7 @@
     }
 
     &__content-box {
-        display: block;
+        display: none;
         position: relative;
         min-height: 300px;
         overflow: hidden;
@@ -38,7 +38,7 @@
 
             &_content {
                 position: absolute;
-                top: 0;
+                top: -100%;
                 margin-top: 80px;
 
                 &_active {
