@@ -10,6 +10,10 @@
         color: $main-color2;
     }
 
+    &__arrwrapp {
+        display: none;
+    }
+
     &__wrapper {
         margin-top: 80px;
     }
@@ -18,10 +22,11 @@
         display: flex;
         justify-content: space-between;
         margin-bottom: 40px;
+        width: 100%;
     }
 
     &-item {
-        width: 505px;
+        width: 31.5%;
         border: 1px solid $main-color2;
         
         &__body {
@@ -44,5 +49,116 @@
             }
         }
     }
+}
 
+@media (max-width: 1679px) {
+    .container {
+        max-width: 1320px;
+    }
+}
+
+@media (max-width: 1440px) {
+    .container {
+        max-width: 1120px;
+    }
+
+    .articles {
+        &-item {
+            &__descr {
+                font-size: 26px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 968px;
+    }
+
+    .articles {
+        &__wrapper {
+            margin-top: 40px;
+        }
+        &-item {
+            &__body {
+                padding: 25px;
+            }
+            &__descr {
+                font-size: 24px;
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+
+    .articles {
+        &-item {
+            &__body {
+                padding: 20px 11px;
+            }
+
+            &__descr {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+
+    .articles {
+        padding-bottom: 80px;
+
+        &__arrwrapp {
+            display: flex;
+        }
+
+        &__wrapper {
+            margin-top: 0;
+        }
+
+        &__border {
+            min-height: 105px;
+        }
+
+        &__content {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+
+            &_active {
+                display: flex;
+            }
+        }
+
+
+        &-item {
+            width: 100%;
+            margin-top: 40px;
+            
+            &__body {
+                padding: 40px;
+            }
+
+            &__descr {
+                font-size: 22px;
+            }
+        }
+    }
+}
+
+@media (max-width: 429px) {
+    .container {
+        max-width: 100%;
+        padding: 0 20px;
+    }
 }
