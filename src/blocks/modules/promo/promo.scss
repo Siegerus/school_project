@@ -294,6 +294,7 @@
             position: absolute;
             right: -83px;
             bottom: 0;
+            width: 90.3%;
             max-width: 390px;
 
             img {
@@ -354,13 +355,6 @@
             font-size: 14px;
         }
 
-        &__img {
-            position: absolute;
-            right: -83px;
-            bottom: 0;
-            max-width: 390px;
-        }
-
         &__analys, &__card, &__example {
             font-size: 17px;
         }
@@ -378,9 +372,3 @@
     }
 }
 
-/* @media (max-width: 576px) {
-    .container {
-        max-width: 100%;
-        padding: 0 10px;
-    }
-} */

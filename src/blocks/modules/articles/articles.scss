@@ -23,11 +23,16 @@
         justify-content: space-between;
         margin-bottom: 40px;
         width: 100%;
+
+        &_m-visible {
+            display: none;
+        }
     }
 
     &-item {
         width: 31.5%;
         border: 1px solid $main-color2;
+
         
         &__body {
             padding: 31px 40px;
@@ -77,6 +82,8 @@
     }
 
     .articles {
+        padding-bottom: 60px;
+
         &__wrapper {
             margin-top: 40px;
         }
@@ -97,7 +104,19 @@
     }
 
     .articles {
+        &__content {
+            &_m-visible {
+                display: flex;
+            }
+        }
         &-item {
+            min-width: 35vmax;
+            width: 345px;
+
+            &_m-hidden {
+                display: none;
+            }
+            
             &__body {
                 padding: 20px 11px;
             }
@@ -120,6 +139,8 @@
 
         &__arrwrapp {
             display: flex;
+            width: 100%;
+            max-width: 410px;
         }
 
         &__wrapper {
@@ -135,15 +156,25 @@
             flex-direction: column;
             align-items: center;
 
+            &__content {
+                &_m-visible {
+                    display: none;
+                }
+            }
+
             &_active {
                 display: flex;
             }
         }
 
-
         &-item {
             width: 100%;
+            max-width: 505px;
             margin-top: 40px;
+
+            &_m-hidden {
+                display: block;
+            }
             
             &__body {
                 padding: 40px;
@@ -160,5 +191,13 @@
     .container {
         max-width: 100%;
         padding: 0 20px;
+    }
+
+    .articles {
+        &-item {
+            &__body {
+                padding: 20px;
+            }
+        }
     }
 }
