@@ -42,7 +42,7 @@
 
     &__button {
         align-self: flex-start;
-        margin-top: 80px;
+        margin-top: 77px;
         background-color: $main-color2;
     }
 
@@ -120,7 +120,7 @@
             width: 600px;
             font-weight: 400;
             font-size: 24px;
-            line-height: 100%;
+            line-height: 125%;
             color: $main-color3;
         }
     }
@@ -245,6 +245,10 @@
     }
 
     .start {
+        &__wrapper {
+            margin-top: 0;
+        }
+
         &__list {
             margin-top: 25px;
         }
@@ -272,11 +276,96 @@
         max-width: 100%;
         padding: 0 20px;
     }
+
+    .start {
+        padding: 60px 0 80px 0;
+
+        &__wrapper {
+            margin-top: 0;
+            flex-direction: column;
+        }
+
+        &__item {
+            width: 100%;
+        }
+
+        &-feed-form {
+            width: 100%;
+            margin-top: 23px;
+
+            &__introduction {
+                font-size: 16px;
+                line-height: 164%;
+            }
+
+            &__input {
+                height: 55px;
+                margin-bottom: 32px;
+                font-size: 22px;
+
+                &::placeholder {
+                    font-size: 22px;
+                }
+            }
+
+            &__policy {
+                align-items: center;
+                min-height: 37px;
+                margin-top: -10px;
+            }
+        }
+
+        &__title {
+              font-size: 36px; 
+              line-height: 156%;
+        }
+
+        &__list {
+            margin-top: 0;
+
+            li  {
+
+                font-size: 22px;
+                line-height: 155%;
+            }
+        }
+
+        &__button {
+            width: 100%;   
+            max-width: 389px;
+            margin-top: 35px;
+        }
+    }
 }
 
 @media (max-width: 429px) {
     .container {
         max-width: 100%;
         padding: 0 20px;
+    }
+
+    .start  {
+        &__list {
+            margin-top: 15px;
+
+            li  {
+                font-size: 20px;
+            }
+        }
+
+        &-feed-form {
+            &__introduction {
+                font-size: 16px;
+                line-height: 140%;
+            }
+
+            &__input {
+                font-size: 20px;
+
+                &::placeholder {
+                    font-size: 20px;
+                }
+            }
+        }
     }
 }
