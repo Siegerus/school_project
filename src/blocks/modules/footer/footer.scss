@@ -15,6 +15,7 @@
         width: 26%;
 
         &__logo {
+            width: 100%;
             max-width: 260px;
 
             img {
@@ -34,7 +35,6 @@
                 text-decoration: none;
                 color: $main-color3;
             }
-            
         }
 
         &__confidential {
@@ -71,7 +71,6 @@
                     text-decoration: none;
                     color: $main-color3;
                 }
-                
             }
         }
     }
@@ -97,8 +96,178 @@
             color: $main-color3;
         }
     }
+}
 
+@media (max-width: 1679px) {
+    .container {
+        max-width: 1320px;
+    }
+}
 
+@media (max-width: 1440px) {
+    .container {
+        max-width: 1120px;
+    }
 
+    .footer {
+        &-links {
+            width: 26%;
+            &__logo {
+                max-width: 260px;
 
+            }
+            &__policy {
+                font-size: 22px;
+            }
+    
+            &__confidential {
+
+                font-size: 22px;
+
+            }
+        }
+    
+        &-nav {
+            width: 14.4%;
+    
+            &__title {
+                font-size: 38px;
+            }
+    
+            &__list {
+                li {
+                    font-size: 22px;
+                }
+            }
+        }
+    
+        &-info {
+            &__title {
+                font-size: 38px;
+            }
+    
+            &__descr {
+                font-size: 22px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 968px;
+    }
+
+    .footer {
+        padding: 80px 0;
+
+        &-links {
+            width: 26%;
+            
+            &__logo {
+                max-width: 260px;
+
+            }
+            &__policy {
+                font-size: 20px;
+            }
+    
+            &__confidential {
+
+                font-size: 20px;
+
+            }
+        }
+    
+        &-nav {
+            width: 20%;
+    
+            &__title {
+                font-size: 38px;
+            }
+    
+            &__list {
+                li {
+                    font-size: 22px;
+                }
+            }
+        }
+    
+        &-info {
+            &__title {
+                font-size: 36px;
+            }
+    
+            &__descr {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+    .footer {
+        padding: 80px 0;
+
+        &-links {
+            width: 26%;
+            
+            &__logo {
+                max-width: 260px;
+
+            }
+            &__policy {
+                margin-top: 70px;
+                font-size: 20px;
+            }
+    
+            &__confidential {
+                margin-top: 50px;
+                font-size: 20px;
+            }
+        }
+    
+        &-nav {
+            width: 28%;
+    
+            &__title {
+                font-size: 34px;
+            }
+    
+            &__list {
+                li {
+                    font-size: 20px;
+                }
+            }
+        }
+    
+        &-info {
+            width: 27%;
+
+            &__title {
+                font-size: 32px;
+            }
+    
+            &__descr {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 429px) {
+    .container {
+        max-width: 100%;
+        padding: 0 20px;
+    }
 }
