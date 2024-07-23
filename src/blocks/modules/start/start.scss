@@ -1,12 +1,14 @@
 .start {
-    padding: 120px;
+    padding: 120px 0;
     background-color: $main-color2;
 
     &__wrapper {
         margin-top: 0;
+        width: 100%;   
     }
 
     &__item {
+        /* width: 44.5%; */
         max-width: 695px;
         margin-top: 0;
     }
@@ -16,6 +18,7 @@
         font-size: 48px;
         line-height: 95%;
         text-transform: uppercase;
+        text-align: left;
     }
 
     &__list {
@@ -26,7 +29,7 @@
             font-weight: 400;
             font-size: 32px;
             line-height: 119%;
-            text-align: justify;
+            text-align: left;
             color: $main-color3;
 
             &::before {
@@ -47,7 +50,8 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 626px;
+        max-width: 626px;
+        width: 39.2%;
 
         &__input {
             width: 100%;
@@ -62,11 +66,17 @@
             color: $main-color3;
             outline: none;
             background-color: $main-color2;
+            
              
             &::placeholder {
                 font-weight: 400;
                 font-size: 32px;
                 color: $main-color3;
+            }
+
+            &:focus::placeholder {
+                color: transparent;
+                transition: all 0.4s;
             }
         }
 
@@ -77,8 +87,8 @@
         &__checkbox {
             position: relative;
             margin-right: 12px;
-            width: 24px;
-            height: 24px;
+            min-width: 24px;
+            min-height: 24px;
             background: $main-color2;
             border: 1px solid $main-color3;
             
@@ -89,6 +99,7 @@
                 height: 17px;
                 top: 2px;
                 left: 3px;
+                transition: all 0.4s;
                 }
         }
 
@@ -98,11 +109,6 @@
                 background: url("../img/icons/check.svg") center / cover no-repeat;
             }
         }
-
-
-
-
-
 
         &__policy {
             display: flex;
@@ -117,7 +123,160 @@
             line-height: 100%;
             color: $main-color3;
         }
+    }
+}
 
-        
+@media (max-width: 1679px) {
+    .container {
+        max-width: 1320px;
+    }
+    .start {
+        &__list {
+            li {
+                font-size: 30px;
+            }
+        }
+
+        &__item {
+            max-width: 695px;
+        }
+
+        &-feed-form {
+            &__input {
+                font-size: 30px;
+
+                &::placeholder {
+                    font-size: 30px;
+                }
+            }
+
+            &__introduction {
+                font-size: 22px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1440px) {
+    .container {
+        max-width: 1120px;
+    }
+
+    .start {
+        &__list {
+            margin-top: 40px;
+
+            li {
+                font-size: 28px;
+            }
+        }
+
+        &-feed-form {
+            width: 42%;
+
+            &__introduction {
+                font-size: 20px;
+            }
+
+            &__input {
+                font-size: 28px;
+    
+                &::placeholder {
+                    font-size: 28px;
+                }
+            }
+        }
+
+        &__item {
+            max-width: 695px;
+        }
+
+        &__title {
+            font-size: 34px;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 968px;
+    }
+
+    .start {
+        padding: 80px 0;
+
+        &__wrapper {
+            margin-top: 0;
+        }
+
+        &__list {
+            margin-top: 40px;
+
+            li {
+                font-size: 24px;
+            }
+        }
+
+        &-feed-form {
+            width: 45%;
+
+            &__introduction {
+                font-size: 18px;
+            }
+
+            &__input {
+                font-size: 26px;
+    
+                &::placeholder {
+                    font-size: 26px;
+                }
+            }
+        }
+
+        &__item {
+            max-width: 695px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+
+    .start {
+        &__list {
+            margin-top: 25px;
+        }
+
+        &__item {
+            max-width: 690px;
+        }
+
+        &__title {
+            line-height: 135%;
+        }
+
+        &-feed-form {
+            width: 48%;
+        }
+
+        &__button {
+            margin-top: 50px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 429px) {
+    .container {
+        max-width: 100%;
+        padding: 0 20px;
     }
 }
