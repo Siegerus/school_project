@@ -73,6 +73,7 @@
         justify-content: center;
         width: 146px;
         height: 54px;
+        cursor: pointer;
 
         &_left {
             background-color: $main-color2;
@@ -80,6 +81,10 @@
 
         &_right {
             background-color: $main-color3;
+
+            &:hover {
+                background-color: $main-color2;
+            }
         }
 
         &__body {
@@ -115,6 +120,10 @@
 
             &_right {
                 background-color: $main-color2;
+
+                &:hover {
+                    background-color: $main-color3;
+                }
 
                 &::before {
                     right: -2px;
@@ -257,9 +266,14 @@
         }
 
         &__content {
-            grid-template-columns: 1fr;
+            grid-template-columns: 1fr ;
             grid-template-rows: 510px minmax(150px, auto) minmax(72px, auto) minmax(98px, auto) 44px 56px;
             row-gap: 40px;
+        }
+
+        &__item {
+            margin: 0 auto;
+            max-width: 400px;
         }
 
         &__descr {

@@ -32,8 +32,12 @@
     &-item {
         width: 31.5%;
         border: 1px solid $main-color2;
+        cursor: pointer;
 
-        
+        &:hover {
+            background-color: $main-color2;
+        }
+
         &__body {
             padding: 31px 40px;
         }
