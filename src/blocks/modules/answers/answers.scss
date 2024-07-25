@@ -22,15 +22,15 @@
         max-width: 1320px;
     }
 
-    .answers  {
+    .answers {
         &__block {
             width: 100%;
         }
 
         &-list {
             width: 100%;
-            min-width: unset; 
-            max-width: unset; 
+            min-width: unset;
+            max-width: unset;
         }
     }
 }
@@ -40,11 +40,11 @@
         max-width: 1120px;
     }
 
-    .answers  {
+    .answers {
         &-list {
             width: 100%;
-            min-width: unset; 
-            max-width: unset; 
+            min-width: unset;
+            max-width: unset;
         }
     }
 }
@@ -54,15 +54,15 @@
         max-width: 968px;
     }
 
-    .answers  {
+    .answers {
         &__block {
             margin-top: 60px;
         }
 
         &-list {
             width: 90%;
-            min-width: unset; 
-            max-width: unset; 
+            min-width: unset;
+            max-width: unset;
             margin: 0 auto;
         }
     }
@@ -73,7 +73,7 @@
         max-width: 720px;
     }
 
-    .answers  {
+    .answers {
         padding-bottom: 80px;
 
         &__block {
@@ -82,9 +82,9 @@
 
         &-list {
             width: 93%;
-            min-width: unset; 
+            min-width: unset;
             max-width: unset;
-            margin: 0 auto; 
+            margin: 0 auto;
         }
     }
 }
@@ -98,7 +98,7 @@
     .answers {
         padding-bottom: 74px;
 
-        &-list{
+        &-list {
             &__wrapper {
                 min-height: unset;
                 padding: 32px 0;
@@ -108,6 +108,7 @@
                 max-width: 287px;
             }
         }
+
         &__border {
             min-height: 105px;
         }
@@ -121,9 +122,9 @@
     }
 
     .answers {
-        &-list{
+        &-list {
             &__text {
-               font-size: 20px; 
+                font-size: 20px;
             }
         }
     }

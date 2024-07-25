@@ -1,36 +1,39 @@
 .modal {
     &__overlay {
+        display: none;
         position: fixed;
         z-index: 15;
-        display: none;
+
         /* display: block; */
         top: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(66, 66, 66, 60%);
+        background-color: rgb(66 66 66 /60%);
 
         &_active {
             display: block;
-        } 
+        }
     }
 
     &__form {
         display: none;
+        position: fixed;
+
         /* display: block; */
         z-index: 20;
-        position: fixed;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
         width: 35%;
         max-height: 700px;
+        padding: 100px 60px;
+        transform: translate(-50%, -50%);
         margin-top: 0;
-        padding: 100px 60px 100px 60px;
         background-color: $main-color2;
     }
 
     &__item {
         display: none;
+
         /* display: flex; */
         flex-direction: column;
         align-items: flex-end;
@@ -38,9 +41,9 @@
         z-index: 20;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
         width: 1085px;
         padding: 100px 100px 100px 0;
+        transform: translate(-50%, -50%);
         background: url("../img/bg_ellipse-modal.png") center / cover no-repeat;
         background-color: $main-color1;
     }
@@ -52,7 +55,7 @@
         width: 35.8%;
 
         img {
-            width: 100%;;
+            width: 100%;
             height: 100%;
             object-fit: cover;
         }
@@ -77,9 +80,9 @@
     }
 
     &__descr {
-       display: flex;
-       flex-direction: column;
-       align-items: flex-end;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
     }
 
     &__close {
@@ -90,13 +93,20 @@
         height: 40px;
         cursor: pointer;
 
+        &_form {
+            span {
+                display: block;
+                background-color: $main-color1;
+            }
+        }
+
         span {
             display: block;
             position: absolute;
-            width: 2px;
-            height: 100%;
             top: -3px;
             left: 50%;
+            width: 2px;
+            height: 100%;
             transform: translateX(-50%);
             background-color: $main-color2;
 
@@ -106,13 +116,6 @@
 
             &:nth-child(2) {
                 transform: rotate(-45deg);
-            }
-        }
-
-        &_form {
-            span {
-                display: block;
-                background-color: $main-color1;
             }
         }
     }
@@ -141,7 +144,7 @@
 
         &__descr {
             max-width: 550px;
-         }
+        }
     }
 }
 
@@ -157,7 +160,7 @@
         }
 
         &__descr {
-           max-width: 550px;
+            max-width: 550px;
         }
 
         &__title {
@@ -184,12 +187,11 @@
     .modal {
         &__item {
             width: 56.5%;
-            /* min-height: 315px; */
             padding: 60px 70px 65px 0;
         }
 
         &__descr {
-           max-width: 480px;
+            max-width: 480px;
         }
 
         &__title {
@@ -199,7 +201,6 @@
         &__subtitle {
             font-size: 30px;
         }
-
     }
 }
 
@@ -215,7 +216,7 @@
         }
 
         &__descr {
-           max-width: 320px;
+            max-width: 320px;
         }
 
         &__title {
@@ -237,8 +238,8 @@
     .modal {
         &__form {
             width: 100%;
-            height: 100vh;
             max-width: unset;
+            height: 100vh;
             max-height: unset;
             padding: 70px 60px;
         }
@@ -247,12 +248,13 @@
             width: 90.5%;
             max-width: 550px;
             min-height: 690px;
-            padding: 80px 40px 0 40px;
+            padding: 80px 40px 0;
+            margin-top: 0;
             background-image: unset;
         }
 
         &__descr {
-           max-width: 100%;
+            max-width: 100%;
         }
 
         &__title {
@@ -268,13 +270,9 @@
 
         &__img {
             left: 50%;
-            transform: translateX(- 50%);
             width: 55%;
             max-width: 228px;
-        }
-
-        &__form {
-            margin-top: 0;
+            transform: translateX(- 50%);
         }
 
         &__close {
@@ -291,12 +289,11 @@
     }
 
     .modal {
- 
         &__title {
             font-size: 48px;
         }
 
-        &__subtitle {  
+        &__subtitle {
             font-size: 32px;
         }
 
@@ -304,9 +301,6 @@
             width: 100%;
             height: 100%;
             padding: 60px 30px;
-
         }
     }
 }
-
-

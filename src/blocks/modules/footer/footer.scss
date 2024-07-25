@@ -1,5 +1,5 @@
 .footer {
-    padding:  120px 0;
+    padding: 120px 0;
     background-color: #1f1f1f;
 
     &__wrapper {
@@ -108,15 +108,11 @@
     }
 
     .footer {
-        &-nav {
-            width: 20%;
-        }
-
         &-links {
             &__policy {
                 font-size: 23px;
             }
-    
+
             &__confidential {
                 font-size: 23px;
             }
@@ -124,7 +120,7 @@
 
         &-nav {
             width: 20%;
-            
+
             &__list {
                 li {
                     font-size: 23px;
@@ -152,34 +148,35 @@
             &__logo {
                 max-width: 260px;
             }
+
             &__policy {
                 font-size: 22px;
             }
-    
+
             &__confidential {
                 font-size: 22px;
             }
         }
-    
+
         &-nav {
             width: 20%;
-    
+
             &__title {
                 font-size: 38px;
             }
-    
+
             &__list {
                 li {
                     font-size: 22px;
                 }
             }
         }
-    
+
         &-info {
             &__title {
                 font-size: 38px;
             }
-    
+
             &__descr {
                 font-size: 22px;
             }
@@ -197,38 +194,39 @@
 
         &-links {
             width: 26%;
-            
+
             &__logo {
                 max-width: 260px;
             }
+
             &__policy {
                 font-size: 20px;
             }
-    
+
             &__confidential {
                 font-size: 20px;
             }
         }
-    
+
         &-nav {
             width: 21%;
 
             &__title {
                 font-size: 36px;
             }
-    
+
             &__list {
                 li {
                     font-size: 22px;
                 }
             }
         }
-    
+
         &-info {
             &__title {
                 font-size: 36px;
             }
-    
+
             &__descr {
                 font-size: 20px;
             }
@@ -240,26 +238,28 @@
     .container {
         max-width: 720px;
     }
+
     .footer {
         padding: 80px 0;
 
         &-links {
             width: 26%;
-            
+
             &__logo {
                 max-width: 260px;
             }
+
             &__policy {
                 margin-top: 70px;
                 font-size: 20px;
             }
-    
+
             &__confidential {
                 margin-top: 50px;
                 font-size: 20px;
             }
         }
-    
+
         &-nav {
             width: 28%;
 
@@ -280,7 +280,7 @@
             &__title {
                 font-size: 32px;
             }
-    
+
             &__descr {
                 font-size: 20px;
             }
@@ -303,10 +303,10 @@
         }
 
         &-links {
+            order: 3;
             width: 78.2%;
             margin-top: 40px;
-            order: 3;
-            
+
             &__logo {
                 max-width: 260px;
 
@@ -324,18 +324,19 @@
                 font-size: 16px;
                 line-height: 162%;
             }
-    
+
             &__confidential {
                 margin-top: 45px;
                 font-size: 16px;
             }
         }
-    
+
         &-nav {
-            margin-top: 60px;
+            order: 1;
+
             /* width: 352px; */
             width: 90.2%;
-            order: 1;
+            margin-top: 60px;
 
             &__title {
                 font-size: 32px;
@@ -357,12 +358,11 @@
         }
 
         &-info {
+            order: 2;
             width: 64%;
             margin-top: 50px;
-            order: 2;
-    
+
             &__descr {
-                font-size: 16px;
                 font-size: 16px;
                 line-height: 220%;
             }
@@ -374,8 +374,6 @@
     .container {
         max-width: 1320px;
     }
-
-    
 }
 
 @media (max-width: 1440px) {
