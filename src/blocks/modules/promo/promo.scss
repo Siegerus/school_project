@@ -324,6 +324,11 @@
             padding: 27px 35px;
             margin-top: 60px;
             font-size: 22px;
+
+            &:hover {
+                background-color: unset;
+                color: $main-color2;
+            }
         }
 
         &__footer {

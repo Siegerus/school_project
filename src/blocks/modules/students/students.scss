@@ -75,6 +75,11 @@
         height: 54px;
         cursor: pointer;
 
+        &:active {
+            opacity: 0.5;
+            transition: all 0.2s;
+        }
+
         &_left {
             background-color: $main-color2;
         }
@@ -304,12 +309,22 @@
         &-arrow {
             width: 50%;
 
+            &_right {
+                &:hover {
+                    background-color: $main-color3;
+                }
+            }
+
             &__body {
                 width: 83px;
 
                 &_right {
                     position: relative;
                     left: 25px;
+
+                    &:hover {
+                        background-color: $main-color2;
+                    }
                 }
 
                 &_left {

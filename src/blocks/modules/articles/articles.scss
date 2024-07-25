@@ -38,6 +38,11 @@
             background-color: $main-color2;
         }
 
+        &:active {
+            opacity: 0.5;
+            transition: all 0.1s;
+        }
+
         &__body {
             padding: 31px 40px;
         }

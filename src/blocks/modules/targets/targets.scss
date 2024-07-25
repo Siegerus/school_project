@@ -362,6 +362,11 @@
             max-width: 390px;
             padding: 27px 35px;
             font-size: 22px;
+
+            &:hover {
+                background-color: unset;
+                color: $main-color2;
+            }
         }
     }
 }

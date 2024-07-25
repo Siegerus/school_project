@@ -41,9 +41,15 @@
             background-color: $main-color2;
         }
 
+        &:active {
+            opacity: 0.5;
+            transition: all 0.1s;
+        }
+
         &_white {
             position: relative;
             background-color: $main-color3;
+            
         }
 
         &__header {
@@ -307,6 +313,16 @@
 
         &-item {
             padding: 40px 0 34px 20px;
+
+            &:hover {
+                background-color: $main-color1;
+            }
+
+            &_white {
+                &:hover {
+                    background-color: $main-color3;
+                }
+            }
 
             &__header {
                 flex-direction: row;
