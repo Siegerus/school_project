@@ -13,19 +13,19 @@
         </div>
     </div>
 
-    <div class="modal__form start-feed-form">
+    <form class="modal__form start-feed-form" id="modal__form">
         <div class="modal__close modal__close_form">
             <span></span>
             <span></span>
         </div>
         <input class="start-feed-form__input" type="text" name="user" id="user_modal" placeholder="Имя">
-                <input class="start-feed-form__input" type="text" name="phone" id="phone_modal" autocomplete="on" placeholder="Телефон">
-                <input class="start-feed-form__input" type="email" name="mail" id="mail_modal" placeholder="Электронная почта">
-                <div class="start-feed-form__policy">
-                    <input class="start-feed-form__hidden" name="checkbox" id="checkbox_modal" type="checkbox">
-                    <label class="start-feed-form__checkbox" for="checkbox_modal"></label>
-                    <div class="start-feed-form__introduction">Я ознакомлен с политикой конфиденциальности и согласен на обработку персональных данных</div>
-                </div>
-                <button class="start__button promo__btn program__btn modal__btn">Отправить</button>
-    </div>
+        <input class="start-feed-form__input" type="text" name="phone" id="phone_modal" autocomplete="on" placeholder="Телефон">
+        <input class="start-feed-form__input" type="mail" name="email" id="email_modal" placeholder="Электронная почта">
+        <div class="start-feed-form__policy">
+            <input class="start-feed-form__hidden" name="policy" id="policy_modal" type="checkbox">
+            <label class="start-feed-form__checkbox" for="policy_modal"></label>
+            <div class="start-feed-form__introduction">Я ознакомлен с политикой конфиденциальности и согласен на обработку персональных данных</div>
+        </div>
+        <button class="start__button promo__btn program__btn modal__btn">Отправить</button>
+    </form>
 </div>

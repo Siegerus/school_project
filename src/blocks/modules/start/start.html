@@ -9,17 +9,18 @@
                     <li>поработаешь с задачами ЕГЭ</li>
                 </ul>
             </div>
-            <div class="start-feed-form">
+            <form class="start-feed-form" id="start-feed-form">
                 <input class="start-feed-form__input" type="text" name="user" id="user" placeholder="Имя">
                 <input class="start-feed-form__input" type="text" name="phone" id="phone" autocomplete="on" placeholder="Телефон">
-                <input class="start-feed-form__input" type="email" name="mail" id="mail" placeholder="Электронная почта">
+                <input class="start-feed-form__input" type="mail" name="email" id="email" placeholder="Электронная почта">
                 <div class="start-feed-form__policy">
-                    <input class="start-feed-form__hidden" name="checkbox" id="checkbox" type="checkbox">
-                    <label class="start-feed-form__checkbox" for="checkbox"></label>
+                    <input class="start-feed-form__hidden" name="policy" id="policy" type="checkbox">
+                    <label class="start-feed-form__checkbox" for="policy"></label>
                     <div class="start-feed-form__introduction">Я ознакомлен с политикой конфиденциальности и согласен на обработку персональных данных</div>
                 </div>
+                <div class="start-feed-form__error-box"></div>
                 <button class="start__button promo__btn program__btn">Отправить</button>
-            </div>
+            </form>
         </div>
     </div>
 </section>

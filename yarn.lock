@@ -8012,6 +8012,7 @@ bem-tools-create@bem-tools/bem-tools-create:
     imagemin-webp: "npm:^6.0.0"
     imagemin-zopfli: "npm:^7.0.0"
     jquery: "npm:^3.7.1"
+    jquery-validation: "npm:^1.21.0"
     lint-staged: "npm:^12.3.5"
     mediaelement: "npm:^7.0.5"
     postcss: "npm:^8.4.8"
@@ -9677,6 +9678,15 @@ bem-tools-create@bem-tools/bem-tools-create:
   bin:
     jpeg-recompress: cli.js
   checksum: 10c0/cc2577d245760d82d7d82e7b4dc00ce0e08b201f2f2dcedc5f4291e117bddc3049b5136ed32b18998816639137270a4696221a55c5245eb82cb2ef19263656f1
+  languageName: node
+  linkType: hard
+
+"jquery-validation@npm:^1.21.0":
+  version: 1.21.0
+  resolution: "jquery-validation@npm:1.21.0"
+  peerDependencies:
+    jquery: ^1.7 || ^2.0 || ^3.1
+  checksum: 10c0/b5e51fc037f79779f38bbc74dab9d1568d9f7821128aff6dcfeb12b39f0dea79f763516dc3e05b45fc9a2e9282037b08eccad0eef29fc3a23a0211454ab0f0e5
   languageName: node
   linkType: hard
 

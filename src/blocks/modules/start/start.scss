@@ -122,7 +122,16 @@
             line-height: 125%;
             color: $main-color3;
         }
+
+        &__error-box {
+            margin-top: 20px;
+        }
     }
+}
+
+label.error {
+    margin-bottom: 15px;
+    color: $main-color3;
 }
 
 @media (max-width: 1679px) {
