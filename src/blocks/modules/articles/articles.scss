@@ -38,13 +38,14 @@
             background-color: $main-color2;
         }
 
-        &:active {
-            opacity: 0.5;
-            transition: all 0.1s;
-        }
-
         &__body {
             padding: 31px 40px;
+
+            /* &:active {
+                background-color: $main-color2;
+                opacity: 0.2;
+                transition: all 0.1s;
+            } */
         }
 
         &__descr {
