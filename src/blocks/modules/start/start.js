@@ -5,7 +5,7 @@ import validate from "jquery-validation";
 
 $(document).ready(function () {
 
-    $("#start-feed-form").submit(function (e) {
+    $("form").submit(function (e) {
         e.preventDefault();
         if (!$(this).valid()) {
             return;
@@ -14,24 +14,31 @@ $(document).ready(function () {
         $.ajax ({
             type: "POST",
             async: true,
-            url: "mailer/start-feed-form.php" ,
+            url: "mailer/smart.php" ,
             data: $(this).serialize()
         }).done(function() {
 
             $(this).find("input").val("");
             $(".modal__item").addClass("modal__item_active");
             $(".modal__overlay").addClass("modal__overlay_active");
+            $(".modal__form").removeClass("modal__form_active");
             $("form").trigger("reset");
+        });
+
+        $.ajax ({
+            type: "POST",
+            async: true,
+            url: "mailer/telegram/telegram.php" ,
+            data: $(this).serialize()
         });
 
         return false;
     });
 
-
     $("#start-feed-form").validate({
         errorPlacement: function(error, element) {
-            if (element.hasClass("start-feed-form__hidden")) {
-                error.appendTo(".start-feed-form__error-box");
+            if (element.hasClass("start-feed-form__hidden_start")) {
+                error.appendTo(".start-feed-form__error-box_start");
             } else {
                 error.insertAfter(element);
             }
@@ -87,8 +94,8 @@ $(document).ready(function () {
 
     $("#modal__form").validate({
         errorPlacement: function(error, element) {
-            if (element.hasClass("start-feed-form__hidden")) {
-                error.appendTo(".start-feed-form__error-box");
+            if (element.hasClass("start-feed-form__hidden_modal")) {
+                error.appendTo(".start-feed-form__error-box_modal");
             } else {
                 error.insertAfter(element);
             }
