@@ -4,5 +4,8 @@ import "%modules%/start/start";
 import "%modules%/cost/cost";
 import "%modules%/articles/articles";
 import "%modules%/students/students";
+import "%modules%/reviews/reviews";
+import "%modules%/questions/questions";
+import "%modules%/program/program";
 import "%modules%/modal/modal";
 import "%modules%/footer/footer";

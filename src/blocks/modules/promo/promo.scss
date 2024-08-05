@@ -23,7 +23,7 @@
     }
 
     &__content {
-        max-width: 788px;
+        max-width: 590px;
         padding-bottom: 30px;
     }
 
@@ -57,12 +57,13 @@
 
     &__btn {
         display: block;
-        max-width: 430px;
+        max-width: 460px;
         border: 1px solid #424242;
         padding: 26px 40px;
         margin-top: 60px;
         border-radius: 35px;
         color: $main-color2;
+        text-align: center;
         font-size: 24px;
         font-weight: 700;
         line-height: 60%;
@@ -117,7 +118,7 @@
         background-color: $main-color1;
 
         &__content {
-            max-width: 560px;
+            max-width: 600px;
         }
 
         &__title {

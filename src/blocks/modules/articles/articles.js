@@ -6,7 +6,8 @@ $(document).ready(function(){
     $(".articles-item").each(function(i) {
         $(this).hover(function(){
             $(".articles-item__descr").eq(i).css({
-                "color" : "#d9d9d9"
+                "color" : "#d9d9d9",
+                "transition" : "all 0.6s"
             });
         });
 
@@ -20,14 +21,14 @@ $(document).ready(function(){
     $(".articles-item").each(function(i) {
         $(this).mousedown(function(){
             $(".articles-item__descr").eq(i).css({
-                "opacity" : "0.1"
+                "opacity" : "0.1",
+                "transition" : "all 0.1s"
             });
         });
 
         $(this).mouseup(function(){
             $(".articles-item__descr").eq(i).css({
                 "opacity" : "1",
-                "transition" : "all 0.3s"
             });
         });
     });
