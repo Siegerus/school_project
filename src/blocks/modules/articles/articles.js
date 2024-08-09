@@ -9,16 +9,23 @@ $(document).ready(function(){
                 "color" : "#d9d9d9",
                 "transition" : "all 0.6s"
             });
+            $(".articles-item").eq(i).css({
+                "background-color" : "#424242",
+                "transition" : "all 0.6s"
+            });
+
         });
 
         $(this).mouseleave(function(){
             $(".articles-item__descr").eq(i).css({
                 "color" : "#424242"
             });
-        });
-    });
 
-    $(".articles-item").each(function(i) {
+            $(".articles-item").eq(i).css({
+                "background-color" : "#bea58a"
+            });
+        });
+
         $(this).mousedown(function(){
             $(".articles-item__descr").eq(i).css({
                 "opacity" : "0.1",
@@ -32,4 +39,6 @@ $(document).ready(function(){
             });
         });
     });
+
+    
 });

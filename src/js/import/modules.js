@@ -7,5 +7,6 @@ import "%modules%/students/students";
 import "%modules%/reviews/reviews";
 import "%modules%/questions/questions";
 import "%modules%/program/program";
+import "%modules%/answers/answers";
 import "%modules%/modal/modal";
 import "%modules%/footer/footer";

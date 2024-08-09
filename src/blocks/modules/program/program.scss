@@ -50,6 +50,7 @@
         }
 
         &__content {
+            height: auto;
             max-width: 735px;
             font-size: 32px;
             line-height: 119%;
@@ -81,7 +82,7 @@
                 top: -100%;
                 margin-top: 40px;
 
-                &_active{
+                &-active{
                     top: 0;
                     transition: all 0.6s;
                 }
@@ -94,6 +95,10 @@
 
         &_active {
             min-height: 500px;
+        }
+
+        &_hide {
+            max-height: 0;         
         }
     }
 }

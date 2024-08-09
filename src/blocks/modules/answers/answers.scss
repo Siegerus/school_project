@@ -10,10 +10,34 @@
     &-list {
         min-width: unset;
         max-width: 100%;
+
+        &__item {
+            width: 100%;
+            margin-top: 40px;
+
+            &_content {
+                position: absolute;
+                top: -100%;
+                margin-top: 40px;
+
+                &-active{
+                    top: 0;
+                    transition: all 0.6s;
+                }
+            }
+        }
     }
 
     &__block {
         margin-top: 80px;
+    }
+
+    &__content-box {
+        min-height: 0;
+
+        &_active {
+            min-height: 200px;
+        }
     }
 }
 

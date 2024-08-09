@@ -34,18 +34,14 @@
         border: 1px solid $main-color2;
         cursor: pointer;
 
-        &:hover {
+        /* &:hover {
             background-color: $main-color2;
-        }
+        } */
 
         &__body {
             padding: 31px 40px;
 
-            /* &:active {
-                background-color: $main-color2;
-                opacity: 0.2;
-                transition: all 0.1s;
-            } */
+            
         }
 
         &__descr {
@@ -53,6 +49,12 @@
             font-size: 32px;
             line-height: 119%;
             color: $main-color2;
+
+            /* &:active {
+                background-color: $main-color2;
+                opacity: 0.2;
+                transition: all 0.1s;
+            } */
         }
 
         &__img {
