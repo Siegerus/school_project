@@ -15,6 +15,7 @@ window.addEventListener("DOMContentLoaded", function () {
         function contentShow(a) {
             contentBox[a].classList.toggle("answers__content-box_active");
             contentItem[a].classList.toggle("answers-list__item_content-active");
+            plus[a].classList.toggle("answers-list__plus_active");
         }
 
         it.forEach(function (item) {

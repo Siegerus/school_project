@@ -33,3 +33,47 @@ $(document).ready(function() {
         });
     }
 });
+
+window.addEventListener("DOMContentLoaded", function() {
+    let curentIndex = 1,
+        slide = this.document.querySelectorAll(".students__content"),
+        prev = this.document.querySelector(".j-students-left"),
+        next = this.document.querySelector(".j-students-right");
+
+    console.log(slide, prev, next);
+
+    let showSlides = function(index) {
+        if(index > slide.length) {
+            curentIndex = 1;
+        }
+        if(index <= 0) {
+            curentIndex = slide.length;
+        }
+
+
+        slide.forEach((item) => {
+            item.style.display = "none";
+        })
+
+        slide[curentIndex - 1].style.display = "grid";
+    }
+
+    showSlides(curentIndex);
+
+    let toPlus = function(n) {
+        showSlides(curentIndex = curentIndex + n);
+    }
+
+    let toMinus = function(n) {
+        showSlides(curentIndex = curentIndex - n);
+    }
+
+    prev.addEventListener("click", () => {
+        toMinus(1);
+    });
+
+    next.addEventListener("click", () => {
+        toPlus(1);
+    });
+
+});

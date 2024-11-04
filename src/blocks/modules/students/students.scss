@@ -11,6 +11,7 @@
     }
 
     &__wrapper {
+        position: relative;
         margin-top: 80px;
     }
 
@@ -65,6 +66,12 @@
         display: flex;
         width: 292px;
         border: 1px solid $main-color2;
+
+        &_abs {
+            position: absolute;
+            bottom: -50px;
+            left: 53%; 
+        }
     }
 
     &-arrow {
@@ -320,6 +327,11 @@
         &__arrwrap {
             width: 390px;
             margin: 0 auto;
+
+            &_abs {
+                left: 50%; 
+                transform: translateX(-50%);
+            }
         }
 
         &-arrow {

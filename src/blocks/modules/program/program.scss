@@ -56,6 +56,13 @@
             line-height: 119%;
         }
 
+        &__plus {
+            &_active {
+                transform: rotate(315deg);
+                transition: 0.6s all;
+            }
+        }
+
         &__other {
             margin-top: 40px;
             list-style-type: none;

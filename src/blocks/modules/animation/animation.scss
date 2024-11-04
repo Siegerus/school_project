@@ -1,7 +1,22 @@
 .animation {
-    &__fade-out { 
+    &__fadeIn { 
+        animation-name: fade-in;
+        animation-duration: 1.6s;  
+    }
+
+    &__fadeOut { 
         animation-name: fade-out;
-        animation-duration: 0.6s;  
+        animation-duration: 1.6s;  
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1; 
     }
 }
 

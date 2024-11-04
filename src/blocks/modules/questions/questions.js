@@ -11,16 +11,17 @@ window.addEventListener("DOMContentLoaded", function () {
         contentItem = Array.from(this.document.querySelectorAll(".questions-list__item_content-moveOn")),
         contentBox = Array.from(this.document.querySelectorAll(".questions__content-box_moveOn"));
 
-    function questionsMove(it) {
+    function questionsMove(el) {
         function contentShow(a) {
             contentBox[a].classList.toggle("questions__content-box_active");
             contentItem[a].classList.toggle("questions-list__item_content-active");
+            plus[a].classList.toggle("questions-list__plus_active");
         }
 
-        it.forEach(function (item) {
+        el.forEach(function (item) {
             item.addEventListener("click", function (e) {
-                for (let i = 0; i < it.length; i++) {
-                    if (e.target == it[i]) {
+                for (let i = 0; i < el.length; i++) {
+                    if (e.target == el[i]) {
                         contentShow(i);
                     }
                 }

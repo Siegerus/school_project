@@ -16,9 +16,9 @@ window.addEventListener("DOMContentLoaded", function () {
     function programMove(it) {
 
         function contentShow(a) {
-
             contentBox[a].classList.toggle("program__content-box_active");
             contentItem[a].classList.toggle("program-list__item_content-active");
+            plus[a].classList.toggle("program-list__plus_active");
         }
 
         /* function contentHeight() {
