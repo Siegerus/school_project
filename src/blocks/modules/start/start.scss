@@ -104,7 +104,6 @@
 
         &__hidden:checked + &__checkbox {
             &::before {
-                content: "";
                 background: url("../img/icons/check.svg") center / cover no-repeat;
             }
         }
