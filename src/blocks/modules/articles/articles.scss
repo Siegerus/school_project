@@ -33,15 +33,10 @@
         width: 31.5%;
         border: 1px solid $main-color2;
         cursor: pointer;
-
-        /* &:hover {
-            background-color: $main-color2;
-        } */
+        text-decoration: none;
 
         &__body {
-            padding: 31px 40px;
-
-            
+            padding: 31px 40px; 
         }
 
         &__descr {
@@ -49,12 +44,6 @@
             font-size: 32px;
             line-height: 119%;
             color: $main-color2;
-
-            /* &:active {
-                background-color: $main-color2;
-                opacity: 0.2;
-                transition: all 0.1s;
-            } */
         }
 
         &__img {

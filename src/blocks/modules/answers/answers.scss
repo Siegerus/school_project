@@ -16,6 +16,11 @@
                 transform: rotate(315deg);
                 transition: 0.6s all;
             }
+
+            &-reverse {
+                transform: rotate(-315deg);
+                transition: 0.6s all;
+            }
         }
 
         &__item {
@@ -42,7 +47,7 @@
         min-height: 0;
 
         &_active {
-            min-height: 200px;
+            height: unset;
         }
     }
 }

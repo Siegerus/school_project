@@ -6,14 +6,14 @@ import "mediaelement";
 
 
 $(".targets__player").mediaelementplayer({
-    
+    iconSprite: "img/icons/mejs-controls.svg",
+    /* renderers: ["youtube_iframe"], */
 });
+
+
+
 
 /* $(".targets__player").mediaelementplayer({
 	
-    success: function(mediaElement, originalNode, instance) {
-    }
-    
-
 }); */
 

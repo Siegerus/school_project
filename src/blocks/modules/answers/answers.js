@@ -16,6 +16,17 @@ window.addEventListener("DOMContentLoaded", function () {
             contentBox[a].classList.toggle("answers__content-box_active");
             contentItem[a].classList.toggle("answers-list__item_content-active");
             plus[a].classList.toggle("answers-list__plus_active");
+            
+           /*  plus[a].addEventListener("animationend", () => {
+                if (plus[a].classList.contains("animation__rotate")) {
+                    plus[a].classList.remove("animation__rotate");
+                    plus[a].classList.add("animation__rotate-rev");
+                }
+            });  */
+                
+            
+            
+            
         }
 
         it.forEach(function (item) {

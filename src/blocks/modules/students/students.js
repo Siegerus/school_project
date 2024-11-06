@@ -40,8 +40,6 @@ window.addEventListener("DOMContentLoaded", function() {
         prev = this.document.querySelector(".j-students-left"),
         next = this.document.querySelector(".j-students-right");
 
-    console.log(slide, prev, next);
-
     let showSlides = function(index) {
         if(index > slide.length) {
             curentIndex = 1;
