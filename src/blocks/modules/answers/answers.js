@@ -1,7 +1,7 @@
 window.addEventListener("DOMContentLoaded", function () {
 
     "use strict";
-    
+
     let plus = Array.from(this.document.querySelectorAll(".answers-list__plus img")),
         close = Array.from(this.document.querySelectorAll(".answers-list__close img")),
         moveItem = Array.from(this.document.querySelectorAll(".answers-list__wrapper_moveOn")),
@@ -16,17 +16,6 @@ window.addEventListener("DOMContentLoaded", function () {
             contentBox[a].classList.toggle("answers__content-box_active");
             contentItem[a].classList.toggle("answers-list__item_content-active");
             plus[a].classList.toggle("answers-list__plus_active");
-            
-           /*  plus[a].addEventListener("animationend", () => {
-                if (plus[a].classList.contains("animation__rotate")) {
-                    plus[a].classList.remove("animation__rotate");
-                    plus[a].classList.add("animation__rotate-rev");
-                }
-            });  */
-                
-            
-            
-            
         }
 
         it.forEach(function (item) {

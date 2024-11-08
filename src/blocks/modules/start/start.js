@@ -11,12 +11,12 @@ $(document).ready(function () {
             return;
         }
 
-        $.ajax ({
+        $.ajax({
             type: "POST",
             async: true,
-            url: "mailer/smart.php" ,
+            url: "mailer/smart.php",
             data: $(this).serialize()
-        }).done(function() {
+        }).done(function () {
 
             $(this).find("input").val("");
             $(".modal__item").addClass("modal__item_active");
@@ -25,10 +25,10 @@ $(document).ready(function () {
             $("form").trigger("reset");
         });
 
-        $.ajax ({
+        $.ajax({
             type: "POST",
             async: true,
-            url: "mailer/telegram/telegram.php" ,
+            url: "mailer/telegram/telegram.php",
             data: $(this).serialize()
         });
 
@@ -37,7 +37,7 @@ $(document).ready(function () {
 
     function submitForms(form) {
         $(form).validate({
-            errorPlacement: function(error, element) {
+            errorPlacement: function (error, element) {
                 if (element.hasClass("start-feed-form__hidden_start")) {
                     error.appendTo(".start-feed-form__error-box_start");
                 } else if (element.hasClass("start-feed-form__hidden_modal")) {
@@ -85,20 +85,20 @@ $(document).ready(function () {
                 }
             }
         });
-    
-        $.validator.addMethod("justmail", function(value,element) {
-            return this.optional( element ) || /^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@(?:\S{1,63})$/.test( value );
+
+        $.validator.addMethod("justmail", function (value, element) {
+            return this.optional(element) || /^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@(?:\S{1,63})$/.test(value);
         });
-    
-        $.validator.addMethod("justnumber", function(value,element) {
-            return this.optional( element ) || /^[+-]?([0-9]*\\${delimiter})?[0-9]+$/.test( value );
+
+        $.validator.addMethod("justnumber", function (value, element) {
+            return this.optional(element) || /^[+-]?([0-9]*\\${delimiter})?[0-9]+$/.test(value);
         });
     }
 
     submitForms("#start-feed-form");
     submitForms("#modal__form");
-    
+
 });
-    
-    
-    
+
+
+

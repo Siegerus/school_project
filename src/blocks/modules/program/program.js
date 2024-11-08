@@ -21,27 +21,11 @@ window.addEventListener("DOMContentLoaded", function () {
             plus[a].classList.toggle("program-list__plus_active");
         }
 
-        /* function contentHeight() {
-            let elHight,
-                elem = Array.from(document.querySelectorAll(".program-list__content"));
-
-            elem.forEach(function (item) {
-                for (let b = 0; b < elem.length; b++) {
-                    elHight = parseInt(getComputedStyle(item).height);
-                }
-            });
-            
-            console.log(elHight);
-        }
-
-        contentHeight(); */
-
         it.forEach(function (item) {
             item.addEventListener("click", function (e) {
                 for (let i = 0; i < it.length; i++) {
                     if (e.target == it[i]) {
                         contentShow(i);
-                        /* contentHeight(i); */
                     }
                 }
             });
