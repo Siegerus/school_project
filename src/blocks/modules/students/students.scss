@@ -69,7 +69,7 @@
         &_abs {
             position: absolute;
             bottom: -50px;
-            left: 53%; 
+            left: 53%;
         }
     }
 
@@ -92,7 +92,7 @@
 
             &:hover {
                 border: 1px solid $main-color1;
-                background-color: rgb(0, 0, 0);
+                background-color: rgb(0 0 0);
             }
         }
 
@@ -138,7 +138,6 @@
             &_right {
                 background-color: $main-color2;
 
-
                 &::before {
                     right: -2px;
                     left: auto;
@@ -154,17 +153,14 @@
                 }
 
                 &_special {
-                    
                     &::before {
                         background-color: $main-color3;
                     }
 
                     &::after {
-                        
                         background-color: $main-color3;
                     }
                 }
-
             }
         }
     }
@@ -328,7 +324,7 @@
             margin: 0 auto;
 
             &_abs {
-                left: 50%; 
+                left: 50%;
                 transform: translateX(-50%);
             }
         }
