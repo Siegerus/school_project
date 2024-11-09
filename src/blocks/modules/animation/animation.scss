@@ -1,23 +1,23 @@
 .animation {
-    &__fadeIn { 
+    &__fadeIn {
         animation-name: fade-in;
-        animation-duration: 1.6s;  
+        animation-duration: 1.6s;
     }
 
-    &__fadeOut { 
+    &__fadeOut {
         animation-name: fade-out;
-        animation-duration: 1.6s;  
+        animation-duration: 1.6s;
     }
 
     &__rotate {
         animation-name: rotate;
-        animation-duration: 0.6s;  
+        animation-duration: 0.6s;
     }
 
     &__rotate-rev {
         animation-name: rotate;
         animation-duration: 0.6s;
-        animation-direction: reverse;  
+        animation-direction: reverse;
     }
 }
 
@@ -27,7 +27,7 @@
     }
 
     to {
-        opacity: 1; 
+        opacity: 1;
     }
 }
 
@@ -37,7 +37,7 @@
     }
 
     to {
-        opacity: 0; 
+        opacity: 0;
     }
 }
 
