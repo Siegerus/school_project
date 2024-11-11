@@ -1,12 +1,11 @@
-.section-header {
-    &__border {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        min-height: 194px;
-        border-bottom: 1px solid $main-color3;
-    }
+.section-header-border {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 194px;
+    border-bottom: 1px solid $main-color3;
 
+    
     &__title {
         font-weight: 700;
         font-size: 48px;
@@ -38,7 +37,7 @@
         max-width: 968px;
     }
 
-    .section-header {
+    .section-header-border {
         &__title {
             font-size: 42px;
         }
@@ -50,11 +49,9 @@
         max-width: 720px;
     }
 
-    .section-header {
-        &__border {
-            min-height: 175px;
-        }
-
+    .section-header-border {
+        min-height: 175px;
+    
         &__title {
             font-size: 32px;
         }
@@ -67,10 +64,9 @@
         padding: 0 20px;
     }
 
-    .section-header {
-        &__border {
-            min-height: 217px;
-        }
+    .section-header-border {
+        min-height: 217px;
+        
 
         &__title {
             font-size: 36px;
@@ -93,7 +89,7 @@
         padding: 0 20px;
     }
 
-    .section-header {
+    .section-header-border {
         &__title {
             font-size: 32px;
         }
