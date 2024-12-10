@@ -11,20 +11,29 @@ window.addEventListener("DOMContentLoaded", function () {
         moveTextContentItem = Array.from(this.document.querySelectorAll(".program-list__subtitle_content")),
         moveTextTitleContentItem = Array.from(this.document.querySelectorAll(".program-list__title_content-moveOn")),
         contentItem = Array.from(this.document.querySelectorAll(".program-list__item_content")),
-        contentBox = Array.from(this.document.querySelectorAll(".program__content-box"));
+        contentBox = Array.from(this.document.querySelectorAll(".program__content-box")),
+        textContent = Array.from(this.document.querySelectorAll(".program-list__content"));
 
-    function programMove(it) {
+    function programMove(el) {
 
         function contentShow(a) {
             contentBox[a].classList.toggle("program__content-box_active");
             contentItem[a].classList.toggle("program-list__item_content-active");
-            plus[a].classList.toggle("program-list__plus_active");
+            if (contentBox[a].classList.contains("program__content-box_active")) {
+                plus[a].classList.add("program-list__plus_active");
+                close[a].classList.remove("program-list__close_active");
+                contentBox[a].style.maxHeight = (contentItem[a].clientHeight + 90) + "px";
+            } else {
+                plus[a].classList.remove("program-list__plus_active");
+                close[a].classList.add("program-list__close_active");
+                contentBox[a].style.maxHeight = 0;
+            }
         }
 
-        it.forEach(function (item) {
+        el.forEach(function (item) {
             item.addEventListener("click", function (e) {
-                for (let i = 0; i < it.length; i++) {
-                    if (e.target == it[i]) {
+                for (let i = 0; i < el.length; i++) {
+                    if (e.target == el[i]) {
                         contentShow(i);
                     }
                 }
@@ -40,4 +49,6 @@ window.addEventListener("DOMContentLoaded", function () {
     programMove(moveContentItem);
     programMove(moveTextContentItem);
     programMove(moveTextTitleContentItem);
+    programMove(contentBox);
+    programMove(textContent);
 });

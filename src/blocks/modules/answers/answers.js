@@ -9,13 +9,22 @@ window.addEventListener("DOMContentLoaded", function () {
         moveContentItem = Array.from(this.document.querySelectorAll(".answers-list__wrapper_content")),
         moveTextContentItem = Array.from(this.document.querySelectorAll(".answers-list__text_content-moveOn")),
         contentItem = Array.from(this.document.querySelectorAll(".answers-list__item_content")),
+        textContent = Array.from(this.document.querySelectorAll(".answers-list__content")),
         contentBox = Array.from(this.document.querySelectorAll(".answers__content-box"));
 
     function answersMove(it) {
         function contentShow(a) {
             contentBox[a].classList.toggle("answers__content-box_active");
             contentItem[a].classList.toggle("answers-list__item_content-active");
-            plus[a].classList.toggle("answers-list__plus_active");
+            if (contentBox[a].classList.contains("answers__content-box_active")) {
+                plus[a].classList.add("answers-list__plus_active");
+                close[a].classList.remove("answers-list__close_active");
+                contentBox[a].style.maxHeight = (contentItem[a].clientHeight + 90) + "px";
+            } else {
+                plus[a].classList.remove("answers-list__plus_active");
+                close[a].classList.add("answers-list__close_active");
+                contentBox[a].style.maxHeight = 0;
+            }
         }
 
         it.forEach(function (item) {
@@ -35,4 +44,5 @@ window.addEventListener("DOMContentLoaded", function () {
     answersMove(moveTextItem);
     answersMove(moveContentItem);
     answersMove(moveTextContentItem);
+    answersMove(textContent);
 });

@@ -1,5 +1,38 @@
 "use strict";
 import $ from "jquery";
+import { tns } from "tiny-slider";
+
+let slider = tns({
+    container: ".reviews__wrapper",
+    items: 1,
+    slideBy: "page",
+    autoplay: true,
+    controls: false,
+    nav: false,
+    controlsContainer: ".reviews__arrwrapp",
+    speed: 600,
+    autoplayTimeout: 3000,
+    autoplayButtonOutput: false,
+    autoplayHoverPause: true,
+    preventActionWhenRunning: true,
+});
+
+let prev = document.querySelectorAll(".j-reviews-left"),
+    next = document.querySelectorAll(".j-reviews-right");
+
+next.forEach((item) => {
+    item.addEventListener("click", function () {
+        slider.goTo("next");
+        slider.pause();
+    });
+}); 
+
+prev.forEach((item) => {
+    item.addEventListener("click", function () {
+        slider.goTo("prev");
+        slider.pause();
+    });
+});
 
 $(document).ready(function () {
 
@@ -21,7 +54,7 @@ $(document).ready(function () {
 
 });
 
-window.addEventListener("DOMContentLoaded", function () {
+/* window.addEventListener("DOMContentLoaded", function () {
     let curentIndex = 1,
         slide = this.document.querySelectorAll(".reviews__content"),
         prev = this.document.querySelectorAll(".j-reviews-left"),
@@ -64,4 +97,4 @@ window.addEventListener("DOMContentLoaded", function () {
             toPlus(1);
         });
     });
-});
+}); */

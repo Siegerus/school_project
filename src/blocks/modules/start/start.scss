@@ -8,7 +8,6 @@
     }
 
     &__item {
-        /* width: 44.5%; */
         max-width: 695px;
         margin-top: 0;
     }
@@ -130,8 +129,8 @@
 }
 
 label.error {
-    margin-bottom: 15px;
-    color: $main-color3;
+    margin-bottom: 20px;
+    color: $main-color1;
 }
 
 @media (max-width: 1679px) {
@@ -320,7 +319,6 @@ label.error {
 
             &__policy {
                 align-items: center;
-                min-height: 37px;
                 margin-top: -10px;
             }
         }

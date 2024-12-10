@@ -1,6 +1,5 @@
 "use strict";
 import $ from "jquery";
-//const jqueryValidate = require("jquery-validation");
 import validate from "jquery-validation";
 
 $(document).ready(function () {
@@ -59,8 +58,9 @@ $(document).ready(function () {
                 },
                 email: {
                     required: true,
-                    justmail: true,
+                    email: true,
                     rangelength: [5, 30],
+
                 },
                 policy: {
                     required: true
@@ -78,7 +78,7 @@ $(document).ready(function () {
                 },
                 email: {
                     required: "Укажите адрес почты",
-                    justmail: "Некорректный адрес почты"
+                    email: "Некорректный адрес почты"
                 },
                 policy: {
                     required: "Ознакомьтесь с политикой конфиденциальности"

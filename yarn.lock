@@ -8023,6 +8023,7 @@ bem-tools-create@bem-tools/bem-tools-create:
     stylelint-config-standard-scss: "npm:^3.0.0"
     stylelint-order: "npm:^5.0.0"
     stylelint-selector-bem-pattern: "npm:^2.1.1"
+    tiny-slider: "npm:^2.9.4"
     webpack: "npm:^5.70.0"
     webpack-stream: "npm:^7.0.0"
     yargs: "npm:^17.3.1"
@@ -15172,6 +15173,13 @@ bem-tools-create@bem-tools/bem-tools-create:
   version: 1.7.1
   resolution: "timm@npm:1.7.1"
   checksum: 10c0/28759984dac61dce80a250eb6fed42803f834658b77ef0ebec869cc663110a05e8d453cc317f63fe8c8b3a3401a277dc3483324a652b05a4621a4563eaacabad
+  languageName: node
+  linkType: hard
+
+"tiny-slider@npm:^2.9.4":
+  version: 2.9.4
+  resolution: "tiny-slider@npm:2.9.4"
+  checksum: 10c0/e7b0f753cf1d3d04fb23fe92226f9ce5737e2c093104567198e32755574915821ea2a79c12db880aba57ae67532c31cd6c1ed028437618f5e452d31a7c0d9917
   languageName: node
   linkType: hard
 
