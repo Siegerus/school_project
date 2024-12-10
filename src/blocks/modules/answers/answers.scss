@@ -13,16 +13,17 @@
 
         &__plus {
             transition: 0.6s all;
+
             &_active {
                 transform: rotate(315deg);
             }
         }
-        
+
         &__close {
             width: 30px;
             height: 30px;
             cursor: pointer;
-            
+
             &_active {
                 transform: rotate(-315deg);
                 transition: 0.7s all;
