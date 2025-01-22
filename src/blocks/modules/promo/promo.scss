@@ -13,7 +13,9 @@
 
     &__img {
         margin-top: 9px;
-        width: 49.3%;
+        /* width: 49.3%; */
+        width: 650px;
+        height: 679px;
 
         img {
             width: 100%;
@@ -156,6 +158,11 @@
             align-items: flex-end;
         }
 
+        &__img  {
+            width: 552px;
+            height: 577px;
+        }
+
         &__content {
             max-width: 520px;
         }
@@ -217,6 +224,11 @@
         &__analys, &__card, &__example {
             font-size: 22px;
         }
+
+        &__img  {
+            width: 477px;
+            height: 498px;
+        }
     }
 }
 
@@ -258,6 +270,11 @@
 
         &__analys, &__card, &__example {
             font-size: 19px;
+        }
+
+        &__img  {
+            width: 355px;
+            height: 370px;
         }
     }
 }
@@ -307,7 +324,9 @@
             position: absolute;
             right: -83px;
             bottom: 0;
-            width: 90.3%;
+            /* width: 90.3%; */
+            width: 390px;
+            height: 406px;
             max-width: 390px;
 
             img {
@@ -386,6 +405,11 @@
 
         &__footer {
             margin-top: 65px;
+        }
+
+        &__img  {
+            width: 348px;
+            height: 363px;
         }
     }
 }
