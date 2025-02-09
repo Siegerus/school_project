@@ -34,11 +34,14 @@
 
         &__item {
             border-bottom: 1px solid $main-color1;
+            
+            &_launch {
+                cursor: pointer;
+            }
 
             &_content {
                 margin-top: 80px;
-                cursor: pointer;
-
+                
                 &-active {
                     transition: all 0.6s;
                 }
@@ -64,7 +67,6 @@
 
             &_content {
                 min-height: unset;
-                cursor: pointer;
             }
         }
 
@@ -73,7 +75,6 @@
             min-width: 30px;
             height: 30px;
             transition: 0.7s all;
-            cursor: pointer;
 
             &_active {
                 transform: rotate(315deg);
@@ -89,7 +90,6 @@
         &__close {
             width: 30px;
             height: 30px;
-            cursor: pointer;
 
             &_active {
                 transform: rotate(-315deg);

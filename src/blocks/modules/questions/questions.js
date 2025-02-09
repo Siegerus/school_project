@@ -1,10 +1,11 @@
 window.addEventListener("DOMContentLoaded", function () {
 
     "use strict";
-
+    
     let plus = this.document.querySelectorAll(".questions-list__plus img"),
         close = this.document.querySelectorAll(".questions-list__close img"),
         moveItem = this.document.querySelectorAll(".questions-list__item_launch"),
+        moveContentItem = this.document.querySelectorAll(".questions-list__wrapper_content-moveOn"),
         contentItem = this.document.querySelectorAll(".questions-list__item_content-moveOn"),
         contentBox = this.document.querySelectorAll(".questions__content-box_moveOn");
 
@@ -25,8 +26,7 @@ window.addEventListener("DOMContentLoaded", function () {
 
         el.forEach(function (item, i) {
             item.addEventListener("click", function (e) {
-                if (e.target.closest(".questions-list__item") || e.target.closest(".questions__content-box")) {
-                    console.log("done");
+                if (e.target.closest(".questions-list__item") || e.target.closest(".questions-list__wrapper_content-moveOn")) {
                     contentShow(i);
                 }
             });
@@ -34,5 +34,5 @@ window.addEventListener("DOMContentLoaded", function () {
     }
 
     questionsMove(moveItem);
-    questionsMove(contentBox);
+    questionsMove(moveContentItem);
 });

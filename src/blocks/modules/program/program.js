@@ -2,20 +2,15 @@ window.addEventListener("DOMContentLoaded", function () {
 
     "use strict";
 
-    let plus = Array.from(this.document.querySelectorAll(".program-list__plus img")),
-        close = Array.from(this.document.querySelectorAll(".program-list__close img")),
-        moveItem = Array.from(this.document.querySelectorAll(".program-list__wrapper_moveOn")),
-        moveTextItem = Array.from(this.document.querySelectorAll(".program-list__subtitle")),
-        moveTextTitleItem = Array.from(this.document.querySelectorAll(".program-list__title_moveOn")),
-        moveContentItem = Array.from(this.document.querySelectorAll(".program-list__wrapper_content")),
-        moveTextContentItem = Array.from(this.document.querySelectorAll(".program-list__subtitle_content")),
-        moveTextTitleContentItem = Array.from(this.document.querySelectorAll(".program-list__title_content-moveOn")),
-        contentItem = Array.from(this.document.querySelectorAll(".program-list__item_content")),
-        contentBox = Array.from(this.document.querySelectorAll(".program__content-box")),
-        textContent = Array.from(this.document.querySelectorAll(".program-list__content"));
-
+    let plus = this.document.querySelectorAll(".program-list__plus img"),
+        close = this.document.querySelectorAll(".program-list__close img"),
+        moveItem = this.document.querySelectorAll(".program-list__item"),
+        moveContentItem = this.document.querySelectorAll(".program-list__wrapper_content"),
+        contentItem = this.document.querySelectorAll(".program-list__item_content"),
+        contentBox = this.document.querySelectorAll(".program__content-box");
+    
     function programMove(el) {
-
+        
         function contentShow(a) {
             contentBox[a].classList.toggle("program__content-box_active");
             contentItem[a].classList.toggle("program-list__item_content-active");
@@ -30,25 +25,16 @@ window.addEventListener("DOMContentLoaded", function () {
             }
         }
 
-        el.forEach(function (item) {
+        el.forEach(function (item, i) {
             item.addEventListener("click", function (e) {
-                for (let i = 0; i < el.length; i++) {
-                    if (e.target == el[i]) {
-                        contentShow(i);
-                    }
+                if (e.target.closest(".program-list__item") || e.target.closest(".program-list__wrapper_content")) { 
+                    contentShow(i);
                 }
             });
         });
     }
 
-    programMove(plus);
-    programMove(close);
     programMove(moveItem);
-    programMove(moveTextItem);
-    programMove(moveTextTitleItem);
     programMove(moveContentItem);
-    programMove(moveTextContentItem);
-    programMove(moveTextTitleContentItem);
-    programMove(contentBox);
-    programMove(textContent);
+    
 });

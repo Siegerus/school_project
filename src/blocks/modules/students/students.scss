@@ -61,6 +61,10 @@
         object-fit: cover;
     }
 
+    &__social {
+        display: flex;
+    }
+
     &__arrwrap {
         display: flex;
         width: 292px;
@@ -393,9 +397,9 @@
         }
 
         &__social {
-            img {
-                width: 40px;
-            }
+            // img {
+            //     width: 40px;
+            // }
         }
 
         &-arrow {

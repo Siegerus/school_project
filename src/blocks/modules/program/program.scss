@@ -68,7 +68,7 @@
         &__close {
             width: 30px;
             height: 30px;
-            cursor: pointer;
+            
 
             &_active {
                 transform: rotate(-315deg);
@@ -96,6 +96,7 @@
 
         &__item {
             margin-top: 40px;
+            cursor: pointer;
 
             &_content {
                 margin-top: 40px;
@@ -108,9 +109,6 @@
     }
 
     &__content-box {
-        &_active {
-        }
-
         &_hide {
             max-height: 0;
         }
